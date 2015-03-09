@@ -1,0 +1,8 @@
+[user]
+	name = Bradley Anderson
+	email = Brad.Anderson1995@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[core]
+	autocrlf = input
+	safecrlf = false
