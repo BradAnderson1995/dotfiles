@@ -1,0 +1,5 @@
+# PyCharm failed to generate skeletons for these modules.
+# These skeletons will be re-generated automatically
+# when a newer module version or an updated generator becomes available.
+/usr/lib/python2.7/dist-packages/pygame/_numericsurfarray.so = 1.135 1395750218000
+/usr/lib/python2.7/dist-packages/pygame/_numericsndarray.so = 1.135 1395750218000

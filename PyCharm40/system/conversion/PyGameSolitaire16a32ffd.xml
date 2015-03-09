@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="PythonTestConverterProvider" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/PyGameSolitaire.iml" timestamp="1417045580000" />
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/encodings.xml" timestamp="1417045580000" />
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/misc.xml" timestamp="1417045580000" />
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/modules.xml" timestamp="1417045580000" />
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/scopes/scope_settings.xml" timestamp="1417045580000" />
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/vcs.xml" timestamp="1417151718000" />
+    <file path="/home/brad/workspace/python/PyGameSolitaire/.idea/workspace.xml" timestamp="1417835495000" />
+  </project-files>
+</conversion>
+

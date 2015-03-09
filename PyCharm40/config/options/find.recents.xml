@@ -1,0 +1,36 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>handle_event(game_scene, event)</find>
+      <find>move</find>
+      <find>tap</find>
+      <find>SoundStream</find>
+      <find>read</find>
+      <find>CoordinateSurface</find>
+      <find>pygame.S</find>
+      <find>pygame.Surface</find>
+      <find>pygame</find>
+      <find>pygame.</find>
+      <find>link.up</find>
+      <find>link.update_s</find>
+      <find>Re</find>
+      <find>updated</find>
+      <find>rect_offset</find>
+      <find>rect</find>
+      <find>body_rect</find>
+      <find>game_object.rect</find>
+      <find>self.rect</find>
+      <find>backend</find>
+      <find>engine</find>
+      <find>pygame.Rect</find>
+      <find>backend.Rect</find>
+      <find>Rect</find>
+      <find>big_grass</find>
+      <find>collision_rect</find>
+      <find>link_sword_tap</find>
+      <find>link.animation_speed</find>
+      <find>hitboxes</find>
+      <find>print</find>
+    </findStrings>
+  </component>
+</application>

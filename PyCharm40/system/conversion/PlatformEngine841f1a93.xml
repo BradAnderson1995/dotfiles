@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="PythonTestConverterProvider" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/PlatformEngine.iml" timestamp="1419458500000" />
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/encodings.xml" timestamp="1417820536000" />
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/misc.xml" timestamp="1417820536000" />
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/modules.xml" timestamp="1419458548000" />
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/scopes/scope_settings.xml" timestamp="1417820536000" />
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/vcs.xml" timestamp="1417820536000" />
+    <file path="/home/brad/workspace/python/PlatformEngine/.idea/workspace.xml" timestamp="1419811963000" />
+  </project-files>
+</conversion>
+

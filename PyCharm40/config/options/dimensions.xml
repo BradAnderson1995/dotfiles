@@ -1,0 +1,50 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1366.768" x="461" y="122" />
+    <location key="WELCOME_SCREEN.0.0.1366.768" x="678" y="317" />
+    <location key="vcs.readOnlyHandler.ReadOnlyStatusDialog.0.0.1366.768" x="516" y="244" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1366.768" x="394" y="201" />
+    <location key="#Solitaire.0.0.1366.768" x="420" y="27" />
+    <location key="OptionsEditor.0.0.1366.768" x="78" y="26" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1366.768" x="141" y="38" />
+    <location key="refactoring.ChangeSignatureDialog.0.0.1366.768" x="430" y="26" />
+    <location key="CommitChangelistDialog2.0.0.1366.768" x="514" y="64" />
+    <location key="Vcs.Push.Dialog.0.0.1366.768" x="376" y="83" />
+    <location key="StructurePopup.0.0.1366.768" x="448" y="177" />
+    <location key="VCS.ChangelistChooser.0.0.1366.768" x="501" y="215" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1366.768" x="445" y="182" />
+    <location key="#Updates.0.0.1366.768" x="290" y="270" />
+    <location key="DiffWindow.0.0.1366.768" x="100" y="126" />
+    <location key="#Images.0.0.1366.768" x="432" y="119" />
+    <location key="git4idea.ui.branch.GitCompareBranchesDialog.0.0.1366.768" x="100" y="126" />
+    <location key="git4idea.branch.GitSmartOperationDialog.0.0.1366.768" x="419" y="105" />
+    <location key="findTextDialog.0.0.1366.768" x="479" y="137" />
+    <size key="FileChooserDialogImpl.0.0.1366.768" width="426" height="488" />
+    <size key="vcs.readOnlyHandler.ReadOnlyStatusDialog.0.0.1366.768" width="448" height="308" />
+    <size key="#Solitaire.0.0.1366.768" width="518" height="709" />
+    <size key="OptionsEditor.0.0.1366.768" width="1202" height="711" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1366" height="178" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1366" height="178" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1366" height="178" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1366" height="178" />
+    <size key="GridCell.Tab.1.left.0.0.1366.768" width="1366" height="224" />
+    <size key="GridCell.Tab.1.center.0.0.1366.768" width="1366" height="224" />
+    <size key="GridCell.Tab.1.right.0.0.1366.768" width="1366" height="224" />
+    <size key="GridCell.Tab.1.bottom.0.0.1366.768" width="1366" height="224" />
+    <size key="refactoring.ChangeSignatureDialog.0.0.1366.768" width="504" height="709" />
+    <size key="CommitChangelistDialog2.0.0.1366.768" width="689" height="588" />
+    <size key="Vcs.Push.Dialog.0.0.1366.768" width="612" height="559" />
+    <size key="StructurePopup.0.0.1366.768" width="468" height="390" />
+    <size key="VCS.ChangelistChooser.0.0.1366.768" width="356" height="338" />
+    <size key="#com.intellij.fileTypes.FileTypeChooser.0.0.1366.768" width="645" height="406" />
+    <size key="#Updates.0.0.1366.768" width="770" height="229" />
+    <size key="javadoc.popup.0.0.1366.768" width="502" height="125" />
+    <size key="DiffWindow.0.0.1366.768" width="1166" height="516" />
+    <size key="#Images.0.0.1366.768" width="494" height="527" />
+    <size key="git4idea.ui.branch.GitCompareBranchesDialog.0.0.1366.768" width="1166" height="516" />
+    <size key="git4idea.branch.GitSmartOperationDialog.0.0.1366.768" width="520" height="559" />
+    <size key="findTextDialog.0.0.1366.768" width="400" height="495" />
+    <extendedState key="git4idea.ui.branch.GitCompareBranchesDialog" state="0" />
+    <extendedState key="DiffWindow" state="0" />
+  </component>
+</application>
