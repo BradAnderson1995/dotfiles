@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap xsession"
+files="bashrc vimrc vim zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap xsession pam_environment"
 # list of files/folders to symlink in homedir
 
 ##########
