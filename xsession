@@ -1,6 +1,9 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 xmodmap ~/.xmodmap &
-terminator &
+cinnamon-settings-daemon &
+gnome-settings-daemon &
+gnome-volume-manager &
+terminator -l 3split &
 dropbox &
-shutter &
-exec cinnamon
+# shutter &
+exec cinnamon-session
