@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap xsession pam_environment"
+files="bashrc vimrc vim zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap pam_environment"
 # list of files/folders to symlink in homedir
 
 ##########
@@ -57,4 +57,17 @@ else
 fi
 }
 
+install_terminator () {
+# Test to see if terminator is installed. If it is:
+if [ -f /usr/bin/terminator ]; then
+    # Set default terminal emulator
+    echo "Select your prefered terminal emulator"
+    sudo update-alternatives --config x-terminal-emulator
+else
+    echo "Please install terminator, then re-run this script!"
+    exit
+fi
+}
+
 install_zsh
+install_terminator

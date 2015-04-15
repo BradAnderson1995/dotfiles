@@ -3,15 +3,15 @@
   <component name="CodeInsightSettings" version="1417032239587" />
   <component name="CodeStyleSchemeSettings" version="1417032239594" />
   <component name="CodeStyleSchemes" version="1417032239595" />
-  <component name="DimensionService" version="1425874597494" />
+  <component name="DimensionService" version="1426359510318" />
   <component name="EditorColorsManagerImpl" version="1417032239665" />
   <component name="EditorSettings" version="1418175943774" />
   <component name="ExportableTemplateSettings" version="1417119225272" />
   <component name="ExternalResourceManagerImpl" version="1417032239692" />
-  <component name="FeatureUsageStatistics" version="1425882585578" />
+  <component name="FeatureUsageStatistics" version="1426368933433" />
   <component name="FileBasedIndex" version="1417032239693" />
   <component name="FileTypeManager" version="1418846849558" />
-  <component name="FindRecents" version="1425877595304" />
+  <component name="FindRecents" version="1426347435894" />
   <component name="GeneralSettings" version="1419288175322" />
   <component name="Git.Application.Settings" version="1417151718238" />
   <component name="GithubSettings" version="1417151718239" />
@@ -25,19 +25,19 @@
   <component name="ProjectManager" version="1417032239741" />
   <component name="PropertiesComponent" version="1421346296827" />
   <component name="PyCodeInsightSettings" version="1421792791377" />
-  <component name="PyPackageService" version="1425868711945" />
+  <component name="PyPackageService" version="1426346862238" />
   <component name="PyTestFrameworkService" version="1417032564976" />
   <component name="RecentDirectoryProjectsManager" version="1421459318600" />
   <component name="Registry" version="1417032373600" />
   <component name="RunnerLayoutSettings" version="1425873566802" />
-  <component name="StatisticsApplicationUsages" version="1425868711999" />
+  <component name="StatisticsApplicationUsages" version="1426368934328" />
   <component name="TemplateSettings" version="1417045581083" />
   <component name="TodoConfiguration" version="1417032239753" />
   <component name="UpdatesConfigurable" version="1417550631783" />
-  <component name="UsageTrigger" version="1425911280492" />
+  <component name="UsageTrigger" version="1426368934433" />
   <component name="UsagesStatistic" version="1417833314262" />
   <component name="WebBrowsersConfiguration" version="1417032373625" />
-  <component name="WindowManager" version="1425912081430" />
+  <component name="WindowManager" version="1426368934478" />
   <component name="XDebuggerSettings" version="1417032405721" />
   <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl" version="1417032373631" />
 </versions>

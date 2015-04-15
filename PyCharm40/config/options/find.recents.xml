@@ -1,10 +1,6 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>handle_event(game_scene, event)</find>
-      <find>move</find>
-      <find>tap</find>
-      <find>SoundStream</find>
       <find>read</find>
       <find>CoordinateSurface</find>
       <find>pygame.S</find>
@@ -31,6 +27,10 @@
       <find>link.animation_speed</find>
       <find>hitboxes</find>
       <find>print</find>
+      <find>gauss</find>
+      <find>invert</find>
+      <find>clear</find>
+      <find>clear_tiles</find>
     </findStrings>
   </component>
 </application>

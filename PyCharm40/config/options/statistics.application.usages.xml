@@ -3,42 +3,42 @@
     <group name="run-configuration-type">
       <project id="PlatformEngine" values="PythonConfigurationType" />
     </group>
-    <group name="module type">
-      <project id="PlatformEngine" values="PYTHON_MODULE" />
-      <project id="PygletZelda" values="PYTHON_MODULE" />
-      <project id="Solitaire" values="PYTHON_MODULE" />
-      <project id="PyGameSolitaire" values="PYTHON_MODULE" />
-      <project id="PyZelda" values="PYTHON_MODULE" />
-      <project id="GameEngine" values="PYTHON_MODULE" />
-    </group>
     <group name="vcs">
       <project id="PlatformEngine" values="Git" />
       <project id="PygletZelda" values="Git" />
       <project id="PyGameSolitaire" values="Git" />
-      <project id="PyZelda" values="Git" />
       <project id="GameEngine" values="Git" />
+      <project id="PyZelda" values="Git" />
+    </group>
+    <group name="module type">
+      <project id="PlatformEngine" values="PYTHON_MODULE" />
+      <project id="Solitaire" values="PYTHON_MODULE" />
+      <project id="PygletZelda" values="PYTHON_MODULE" />
+      <project id="PyGameSolitaire" values="PYTHON_MODULE" />
+      <project id="GameEngine" values="PYTHON_MODULE" />
+      <project id="PyZelda" values="PYTHON_MODULE" />
+    </group>
+    <group name="file-type">
+      <project id="PlatformEngine" values="XML,Python,Images,UNKNOWN,PLAIN_TEXT" />
+      <project id="Solitaire" values="Python,PLAIN_TEXT,UNKNOWN,XML" />
+      <project id="PygletZelda" values="Python,Images,PLAIN_TEXT,UNKNOWN,XML" />
+      <project id="PyGameSolitaire" values="XML,PLAIN_TEXT,Images,Python,UNKNOWN" />
+      <project id="GameEngine" values="XML,Python,PLAIN_TEXT,UNKNOWN,Images" />
+      <project id="PyZelda" values="Python,XML,PLAIN_TEXT,Images,UNKNOWN" />
     </group>
     <group name="run-configuration-type-temp">
       <project id="PlatformEngine" values="PythonConfigurationType" />
       <project id="Solitaire" values="PythonConfigurationType" />
       <project id="PyGameSolitaire" values="PythonConfigurationType" />
-      <project id="PyZelda" values="PythonConfigurationType" />
       <project id="GameEngine" values="PythonConfigurationType" />
-    </group>
-    <group name="file-type">
-      <project id="PlatformEngine" values="PLAIN_TEXT,Images,UNKNOWN,XML,Python" />
-      <project id="PygletZelda" values="Python,UNKNOWN,Images,XML,PLAIN_TEXT" />
-      <project id="Solitaire" values="Python,XML,UNKNOWN,PLAIN_TEXT" />
-      <project id="PyGameSolitaire" values="UNKNOWN,Python,XML,Images,PLAIN_TEXT" />
-      <project id="PyZelda" values="XML,Python,PLAIN_TEXT,UNKNOWN,Images" />
-      <project id="GameEngine" values="Images,PLAIN_TEXT,UNKNOWN,Python,XML" />
+      <project id="PyZelda" values="PythonConfigurationType" />
     </group>
     <group name="py-interpreter">
       <project id="PlatformEngine" values="Python 2.7.6" />
       <project id="PygletZelda" values="Python 2.7.6" />
       <project id="PyGameSolitaire" values="Python 2.7.6" />
-      <project id="PyZelda" values="Python 2.7.6" />
       <project id="GameEngine" values="Python 2.7.6" />
+      <project id="PyZelda" values="Python 2.7.6" />
     </group>
   </component>
   <component name="UsageTrigger">
@@ -46,12 +46,12 @@
       <entry feature="CreateFile.CreateFileAction" count="4" />
       <entry feature="NewDirectoryProjectAction.Pure Python" count="1" />
       <entry feature="execute.PythonConfigurationType.Debug" count="57" />
-      <entry feature="execute.PythonConfigurationType.Run" count="3912" />
+      <entry feature="execute.PythonConfigurationType.Run" count="3928" />
       <entry feature="ide.settings.Appearance" count="1" />
       <entry feature="ide.settings.GitHub" count="1" />
       <entry feature="ide.settings.Project_Interpreter" count="1" />
       <entry feature="ide.settings.Version_Control" count="1" />
-      <entry feature="ideaapp.started" count="112" />
+      <entry feature="ideaapp.started" count="121" />
     </counts>
   </component>
 </application>
