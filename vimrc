@@ -1,7 +1,11 @@
 set nocompatible " Turn off vim compatibility mode
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+if empty(glob("~/.vim/bundle/vundle"))
+    !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+endif
+
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -59,7 +63,7 @@ map <leader>fc :FufFileWithCurrentBufferDir<CR>
 map <leader>fb :FufBuffer<CR>
 map <leader>ft :FufTag<CR>
 map <leader>t :TlistToggle<CR>
-map <leader>v :e $MYVIMRC<CR>
+map <leader>v :e $MYVIRC<CR>
 
 " Update vimrc
 map <leader>rr :source ~/.vimrc<CR>
@@ -112,7 +116,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-" Maintain context around cursor
+" aintain context around cursor
 set scrolloff=7
 
 " Wildmode configuration
@@ -128,7 +132,7 @@ set ruler
 " Show matching brackets
 set showmatch
 
-" Move between windows
+" ove between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -140,7 +144,7 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 " Remember info about open buffers on close
-set viminfo^=%
+" set viminfo=%
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
