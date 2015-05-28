@@ -1,0 +1,23 @@
+<div class="honey-coupon" >
+  <div class="list-item coupon copy-btn waves-effect waves-dark" data-clipboard-text="{{code}}">
+<!--     <div class="icon down-arrow"></div> -->
+    <div class="code">{{code}}</div>
+    {{#if description}}
+    <div class="description">
+      {{description}}
+    </div>
+    {{/if}}
+    <div class="expiration">
+    {{#if expiration}}
+      exp: {{expiration}}
+    {{else}}
+     {{#unless description}}
+      (no expiration available)
+     {{/unless}}
+    {{/if}}
+    </div>
+  </div>
+  <div class="copied-message">
+    <span> COPIED </span>
+  </div>
+</div>

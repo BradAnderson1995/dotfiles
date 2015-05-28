@@ -1,0 +1,407 @@
+{
+   "InternalTabs": {
+      "message": "A helyi fájlokat, vagy a belső füleket nem lehet osztályozni"
+   },
+   "VoteThank": {
+      "message": "Köszönjük, az Ön értékelése sikeresen mentésre került!"
+   },
+   "anonymousUser": {
+      "message": "Névtelen felhasználó"
+   },
+   "castYourVote": {
+      "message": "Az Ön szavazata"
+   },
+   "checkAll": {
+      "message": "(Többet is kijelölhet)"
+   },
+   "close": {
+      "message": "Bezárás"
+   },
+   "corporate": {
+      "message": "Vállalati"
+   },
+   "currentVote": {
+      "message": "Általános minősítés"
+   },
+   "detailsHeadline": {
+      "message": "Az Avast már ellenőrizte ezt a webhelyet"
+   },
+   "detailsMalwareNo": {
+      "message": "Nem került rosszindulatú program azonosításra"
+   },
+   "detailsMalwareYes": {
+      "message": "Rosszindulatú program azonosítva!"
+   },
+   "detailsPhishingNo": {
+      "message": "Nem került adathalászati tevékenység azonosításra"
+   },
+   "detailsPhishingYes": {
+      "message": "Adathalászat azonosítva!"
+   },
+   "disabledTab": {
+      "message": "A helyi fájlokat, vagy a belső füleket nem lehet osztályozni"
+   },
+   "dntAdTrackingNetworks": {
+      "message": "Nyomkövetés"
+   },
+   "dntAllowed": {
+      "message": "engedélyezve"
+   },
+   "dntBlocked": {
+      "message": "blokkolva"
+   },
+   "dntHeadline": {
+      "message": "%s vállalat próbálta meg nyomon követni Önt"
+   },
+   "dntNetworks": {
+      "message": "Hálózatok"
+   },
+   "dntNetworksDetected": {
+      "message": "%s hálózat azonosítva"
+   },
+   "dntOthersNetworks": {
+      "message": "Egyebek"
+   },
+   "dntSocialNetworks": {
+      "message": "Közösségi hálózatok"
+   },
+   "dntWebAnalyticsNetworks": {
+      "message": "Webanalitika"
+   },
+   "drugs": {
+      "message": "Alkohol / Drogok"
+   },
+   "error": {
+      "message": "Hiba"
+   },
+   "errorUnexpected": {
+      "message": "Váratlan hiba"
+   },
+   "gambling": {
+      "message": "Szerencsejáték"
+   },
+   "howLike": {
+      "message": "Mennyire kedveli ezt a webhelyet?"
+   },
+   "illegal": {
+      "message": "Warez / Illegális"
+   },
+   "it": {
+      "message": "IT / Letöltés"
+   },
+   "loginAnonymous": {
+      "message": "Névtelen felhasználóként"
+   },
+   "loginDesc": {
+      "message": "Töltse ki a my.avast.com fiókjának bejelentkezési adatait:"
+   },
+   "loginError": {
+      "message": "Sikertelen bejelentkezés"
+   },
+   "loginLogin": {
+      "message": "Bejelentkezés"
+   },
+   "loginLogout": {
+      "message": "Kijelentkezés"
+   },
+   "loginName": {
+      "message": "Név:"
+   },
+   "loginPswd": {
+      "message": "Jelszó:"
+   },
+   "malwareNext": {
+      "message": "Az Avast Free Antivirus letöltése"
+   },
+   "malwareSite": {
+      "message": "Ez a webhely károkat okozhat a gépén."
+   },
+   "malwareSiteRec": {
+      "message": "Azt javasoljuk, hogy telepítse az Avast Antivirus programot, a gépe átvizsgálásához."
+   },
+   "news": {
+      "message": "Hírek / Blog"
+   },
+   "noRating": {
+      "message": "Ez a webhely még nincs minősítve"
+   },
+   "noWeight": {
+      "message": "(nincs elég szavazat)"
+   },
+   "phishingBack": {
+      "message": "Kilépek innen"
+   },
+   "phishingClose": {
+      "message": "Figyelmeztetés mellőzése"
+   },
+   "phishingCreditNumber": {
+      "message": "Úgy tűnik, hogy egy nagyon rossz megítélésű webhelyen próbálta megadni a jelszavát, vagy a bankkártyájának a számát. Kérem még egyszer ellenőrizze, hogy ez a hely valódi-e. Ha a személyes adatait egy nem megbízható webhelyen adja meg, azzal biztonsági kockázatnak teszi ki magát."
+   },
+   "phishingPhishingSite": {
+      "message": "Ez a webhely adathalász oldalként ismert."
+   },
+   "phishingTrust": {
+      "message": "Ez a tartomány megbízható"
+   },
+   "phishingWarning": {
+      "message": "Figyelmeztetés"
+   },
+   "pornography": {
+      "message": "Pornográfia"
+   },
+   "ratingAverage": {
+      "message": "A webhely minősítése közepes"
+   },
+   "ratingBad": {
+      "message": "A webhely minősítése rossz"
+   },
+   "ratingCommunity": {
+      "message": "%s közösségi értékelés"
+   },
+   "ratingDone": {
+      "message": "Kész"
+   },
+   "ratingGood": {
+      "message": "A webhely minősítése jó"
+   },
+   "ratingLevelAverage": {
+      "message": "Átlagos"
+   },
+   "ratingLevelBad": {
+      "message": "Rossz"
+   },
+   "ratingLevelPositive": {
+      "message": "Pozitív"
+   },
+   "ratingLevelUndefined": {
+      "message": "Nincs"
+   },
+   "ratingNegative": {
+      "message": "Mi alapján értékelte a tapasztalatait negatívnak?"
+   },
+   "ratingNoRate": {
+      "message": "Most nem szeretném értékelni"
+   },
+   "ratingPending": {
+      "message": "Besorolás kiolvasása"
+   },
+   "ratingPositive": {
+      "message": "Mi alapján értékelte a tapasztalatait pozitívnak?"
+   },
+   "ratingRate": {
+      "message": "Hogyan értékelné a tapasztalatait?"
+   },
+   "ratingTextAverage": {
+      "message": "ennek a webhelynek rossz híre van"
+   },
+   "ratingTextBad": {
+      "message": "ez a webhely nem biztonságos"
+   },
+   "ratingTextPositive": {
+      "message": "ez a webhely biztonságos"
+   },
+   "ratingTextUndefined": {
+      "message": "ismeretlen webhely"
+   },
+   "safeZoneDecline": {
+      "message": "A SafeZone nem ajánlja "
+   },
+   "safeZoneDesc": {
+      "message": "Az Avast azt javasolja, hogy kapcsoljon át a SafeZone-ra"
+   },
+   "safeZoneFeedback": {
+      "message": "A biztonsága érdekében, a kért URL a SafeZone-n belül kerül megnyitásra"
+   },
+   "safeZoneNo": {
+      "message": "Nem"
+   },
+   "safeZoneYes": {
+      "message": "Átkapcsolás"
+   },
+   "settingsReset": {
+      "message": "Alapértelmezés"
+   },
+   "settingsSave": {
+      "message": "Mentés"
+   },
+   "settingscommunityIQ": {
+      "message": "Statisztika"
+   },
+   "settingscommunityIQDesc": {
+      "message": "Adatok anonim elküldésének engedélyezése, a szolgáltatásaink javítása érdekében"
+   },
+   "settingsdnt": {
+      "message": "Nincs nyomkövetés"
+   },
+   "settingsdnt0": {
+      "message": "Adatvédelmi pajzs"
+   },
+   "settingsdnt2": {
+      "message": "Nincs nyomkövetés"
+   },
+   "settingsdntAdTrackingDesc": {
+      "message": "Alapértelmezésben blokkolja a nyomkövetési technikákat"
+   },
+   "settingsdntDesc": {
+      "message": "Nemkívánatos reklámok felismerése és blokkolása, valamint védelem a tevékenységét elemző webhelyek nyomkövetési technikái ellen"
+   },
+   "settingsdntOthersDesc": {
+      "message": "Egyéb tevékenységek alapértelmezett blokkolása"
+   },
+   "settingsdntSocialDesc": {
+      "message": "Alapértelmezésben blokkolja a közösségi hálózatokat"
+   },
+   "settingsdntWebAnalyticsDesc": {
+      "message": "Alapértelmezésben blokkolja a webes tevékenységet elemző technikákat"
+   },
+   "settingsphishing": {
+      "message": "Adathalászat-elleni védelem"
+   },
+   "settingsphishing0": {
+      "message": "Szörfölésvédelem"
+   },
+   "settingsphishing2": {
+      "message": "Adathalászat-elleni védelem"
+   },
+   "settingsphishingDesc": {
+      "message": "Rosszindulatú programok ellenőrzése a webhelyeken, és védelem az adathalász jellegű tevékenységek ellen"
+   },
+   "settingssafeZone": {
+      "message": "Védett zóna"
+   },
+   "settingssafeZoneDesc": {
+      "message": "Átváltás a védett zónára a kényes pénzügyi webhelyeken (az Avast Antivirus-nak telepítve kell lennie)"
+   },
+   "settingsserp": {
+      "message": "Keresőmotor eredmények"
+   },
+   "settingsserpDesc": {
+      "message": "Színezés engedélyezése a keresési eredmények oldalon"
+   },
+   "settingsserpPopupDesc": {
+      "message": "Felugró ablakok engedélyezése a keresési eredmények oldalon"
+   },
+   "settingssiteCorrect": {
+      "message": "SiteCorrect"
+   },
+   "settingssiteCorrectAutoDesc": {
+      "message": "Azonnali kihagyás, és automatikus átirányítás a legitim webhelyekre"
+   },
+   "settingssiteCorrectDesc": {
+      "message": "Elgépelt URL-ek felismerése és korrigálása, majd átirányítás a legitim webhelyekre"
+   },
+   "sfzoneAlways": {
+      "message": "Igen mindig"
+   },
+   "sfzoneDesc": {
+      "message": "Egy online banki oldalt adott meg. Szeretné, hogy azt az Avast a védett zónában nyissa meg?"
+   },
+   "sfzoneHeadline": {
+      "message": "Avast védett zóna"
+   },
+   "sfzoneNever": {
+      "message": "Sohasem"
+   },
+   "sfzoneNo": {
+      "message": "Nem"
+   },
+   "sfzoneSwitch": {
+      "message": "Átváltás az Avast védett zónára"
+   },
+   "sfzoneYes": {
+      "message": "Igen"
+   },
+   "shopping": {
+      "message": "Vásárlás"
+   },
+   "sideDashboard": {
+      "message": "My Avast"
+   },
+   "sideDetails": {
+      "message": "További információ"
+   },
+   "sideRate": {
+      "message": "Értékelés"
+   },
+   "sideSettings": {
+      "message": "Beállítások"
+   },
+   "sitecorrectAuto": {
+      "message": "Ezentúl automatikusan irányítson át a helyes weboldalakra"
+   },
+   "sitecorrectBarButton": {
+      "message": "Ez nem hiba, vigyél vissza az előző helyre"
+   },
+   "sitecorrectBarMsg": {
+      "message": "SiteCorrect: automatikus átirányítás %s"
+   },
+   "sitecorrectHeadline": {
+      "message": "SiteCorrect"
+   },
+   "sitecorrectHelp": {
+      "message": "Az Avast SiteCorrect lehetőségének beállításához nyissa meg az Avast felhasználói felületét, menjen a Kiegészítő védelem fülre, ott válassza a Böngésző védelmet, majd a Beállítások gombot."
+   },
+   "sitecorrectMean": {
+      "message": "Erre gondolt: %s?"
+   },
+   "sitecorrectNo": {
+      "message": "Nem, hanem erre %s"
+   },
+   "sitecorrectText": {
+      "message": "Ez valószínűleg nem az a webhely, ahova szeretne belépni."
+   },
+   "sitecorrectYes": {
+      "message": "Igen"
+   },
+   "social": {
+      "message": "Közösségi / Játék"
+   },
+   "thanksHeadline": {
+      "message": "Köszönjük az értékelését!"
+   },
+   "thanksMessage": {
+      "message": "A szavazata elküldésre került."
+   },
+   "title": {
+      "message": "Avast Online védelem beállításai"
+   },
+   "topBarDetails": {
+      "message": "Részletek"
+   },
+   "topBarRatingAverage": {
+      "message": "%s rendben levőnek ítélte"
+   },
+   "topBarRatingBad": {
+      "message": "%s veszélyesnek ítélte"
+   },
+   "topBarRatingGood": {
+      "message": "%s biztonságosnak ítélte"
+   },
+   "violence": {
+      "message": "Fegyverek / Erőszak"
+   },
+   "vote": {
+      "message": "Szavazás"
+   },
+   "voteNegative": {
+      "message": "negatív"
+   },
+   "votePositive": {
+      "message": "pozitív"
+   },
+   "webrepDisabled": {
+      "message": "A webhelyminősítő ki van kapcsolva"
+   },
+   "weight1": {
+      "message": "(kevés számú szavazat alapján)"
+   },
+   "weight2": {
+      "message": "(korlátozott számú szavazat alapján)"
+   },
+   "weight3": {
+      "message": "(nagyon sok szavazat alapján)"
+   },
+   "whatTypeContent": {
+      "message": "Milyen típusú tartalom található a webhelyen?"
+   }
+}

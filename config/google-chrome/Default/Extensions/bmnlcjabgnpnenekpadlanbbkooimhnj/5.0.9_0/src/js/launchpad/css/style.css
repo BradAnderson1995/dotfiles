@@ -1,0 +1,969 @@
+html, body {
+  overflow: hidden;
+  height: 100%;
+  background-color: #FFF;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  margin: 0px;
+}
+
+
+/* NOTE: height must be set explicitly */
+.launchpad-main {
+  font-family: 'avenir','Open Sans',sans-serif;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  display: inline-block;
+  margin-bottom: 25px;  /* for footer */
+
+  /* some stuff to prevent webkit from not drawing the panel */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+  -webkit-backface-visibility: hidden;
+  
+}
+
+/**************  Tabs General ****************/
+
+div#tabs ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+}
+
+div#tabs ul li {
+  float: left;
+}
+
+
+
+/**************  Tab buttons ****************/
+
+div#tabs ul li a {
+  text-decoration: none;
+  color: #b6b5b5;
+}
+
+
+.tab-btn {
+  width: 60px;
+  height: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.honeylogo-tab-btn, .honeylogo-tab-btn:hover {
+  background-image: url('https://storage.googleapis.com/honey-extension/images/honey-logo-black.png');
+  width: 54px;
+  height: 34px;
+  cursor: default;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 20px;
+  background-position-y: -4px;
+}
+
+.honeylogo-tab-btn:active {
+  cursor: none;
+}
+
+
+.tab-btn.active {
+  background-color: #FFF;
+}
+
+/**************  Buttons General  ********/
+
+.show-savings-button, 
+.find-coupons-button,
+.add-to-cart-button,
+.pay-bitcoins-button
+{
+  background-color: #f69f06;
+  box-shadow: 1px 1px 1px 1px #b6b6b6;
+  border-radius: 3px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:'avenir', "Open Sans",sans-serif;
+  font-size:14px;
+  padding:7px 7px;
+  text-decoration:none;
+  overflow: auto;
+  width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.show-savings-button:hover,
+.find-coupons-button:hover,
+.add-to-cart-button:hover,
+.pay-bitcoins-button:hover
+{
+  background-color:#ffb805;
+}
+
+.show-savings-button:active,
+.find-coupons-button:active,
+.add-to-cart-button:active,
+.pay-bitcoins-button:active
+{
+  position:relative;
+  top:1px;
+}
+
+.panel-button-enabled {
+  background-color:    #f69f06;
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0px #b6b6b6;
+  cursor: pointer;
+}
+.panel-button-enabled:hover {
+  background-color: #ffb805
+}
+
+.panel-button-disabled, .panel-button-disabled:hover {
+  background-color: #f6f6f6;
+  color: #cccccc;
+  box-shadow: 0px 0px 2px 0px #b6b6b6 inset;
+  cursor: default;
+}
+
+.merchant-history-list h4{
+  /*position: absolute;*/
+  margin: 4px 0;
+  color: #777;
+}
+
+.merchant-history-item{
+  text-align: left;
+  position: relative;
+  padding: 5px;
+  margin: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 53px;
+}
+
+.apply-btn{
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+}
+
+.merchant-history-item .item-header{
+  background: #eee;
+  margin: -5px -5px 5px -5px;
+  padding: 1px 5px;
+}
+
+.merchant-history-item .item-header .price{
+  float: right;
+  font-style: italic;
+}
+
+.merchant-history-item .pin{
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 2px;
+}
+
+.merchant-history-item .code{
+  font-size: 1.1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a#view_history{
+  color: #888;
+  text-decoration: underline;
+}
+
+/**************  Panels ****************/
+
+/* tabs-panel is added dynamically by jquery extension */
+.tabs-panel {
+  clear: left;
+  text-align: center;
+  font-size: 12px;
+  height: auto;
+}
+
+.tabs-panel div a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f69f06;
+}
+
+#product_page_notice_text {
+  display: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b3b3b3;
+}
+
+#cart_unsupported_text {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b3b3b3;
+}
+
+#cart_suggest_store_text {
+  display: inline-block;
+}
+
+/**************  Savings Panel  ****************/
+
+.install-honey-extension {
+  display: none;
+}
+
+#savings_unsupported_text, #install_honey_extension_text {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b3b3b3;
+}
+
+#savings_suggest_store_text, #install_honey_link_text {
+  display: inline-block;
+}
+
+/**************  Pay Panel  ****************/
+
+#pay_unsupported_text {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b3b3b3;
+}
+
+#pay_suggest_store_text {
+  display: inline-block;
+}
+
+#pay_bitcoins_unavailable_text {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b3b3b3;
+}
+
+
+/************* new CSS for sales view ***************/
+
+/***** CSS for new "apply coupons" screen ******/
+/***********************************************/
+
+#apply-coupons-container {
+  width:330px;
+}
+
+ul.horizontal-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 34px;
+}
+
+ul.horizontal-list li {
+  float: left;
+}
+
+.apply-btn-container {
+  background-color: #FFF;
+  height: 130px;
+  text-align: center; 
+  vertical-align: middle; 
+}
+
+.apply-btn-container #coupons-message {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom:10px;
+}
+
+.apply-btn-container .savings-count {
+  font-size:14pt;
+  color: #E79126;
+}
+
+div.apply-btn-container .orange-btn {
+  height: 26px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 11pt;
+}
+
+div.apply-btn-container .orange-btn .btn-text {
+  padding-top:3px;
+}
+
+div.apply-disclaimer {
+  font-size: 8pt;
+  font-weight:300;
+  padding-top:10px;
+  text-align:center;
+}
+
+#apply-coupons-container .coupon-content {
+  height:220px;
+  overflow-y:scroll;
+  margin-right: 7px;
+  background-color: #F4F4F4;
+}
+
+#apply-coupons-container .coupon-content::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width:7px;
+}
+
+#apply-coupons-container .coupon-content::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+#apply-coupons-container .coupon-content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/******* Launchpad Top bar ********/
+div#sales-view {
+  font-weight: 500;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header-bar {
+  background-color:#FFFFFF;
+}
+
+#tab-bar {
+  height:20px;
+  background-color: #F5F4F6
+}
+
+div#sales-view ul.horizontal-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 34px;
+}
+
+/*  makes the list "horizontal" in orientation */
+div#sales-view ul.horizontal-list li {
+  float: left;
+}
+
+.toptabs {
+  display:inline-block;
+  width:60px;
+  height:40px;
+  margin:auto;
+}
+
+/* tabs bar between coupons, sales, trending */
+.horizontal-list #tab-bar li {
+    float: left;
+}
+
+div#sales-view ul li a {
+  text-decoration: none;
+}
+
+ul#tab-bar .bordered-text {
+  width:66%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color:#000;
+}
+
+img.h-logo {
+  width: 35px;
+  height: 35px;
+  padding-left: 5px;
+}
+
+
+div.sales-tab-btn:hover {
+  color: #2E4560;
+  cursor: pointer;
+}
+
+ul#tab-bar .bordered-text.current_tab {
+  border-bottom: 2px solid orange;
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out;
+}
+
+div#sales-view .sales-tab-btn{
+  padding-top: 8px;
+  color: #4F5363;
+  width: 130px;
+  height: 25px;
+  vertical-align: middle;
+  /* adds a divider between the tabs
+  border-right: 1px solid;
+  border-color: #dedede; */
+}
+
+.savings-count {
+  color: #E79126;
+}
+
+
+input#sales-search {
+  font-size: 13px; 
+  border: 5px;
+  width: 222px;
+  height: 18px;
+  color: #939399;
+  background-color: #E3E3EB;
+  display: inline-block;
+  position: relative;
+  top: -6px;
+}
+
+.search-box {
+  background-color: #E3E3EB;
+  width: 250px;
+  height: 20px;
+  border: 1px solid #DDD;
+  border-radius: 3px;  
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+.input-focused {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input#sales-search:focus {
+  outline: none;
+}
+.search-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('images/search8.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position:relative;
+  left:3px;
+  cursor: pointer;
+  -webkit-filter: opacity(50%);
+} 
+
+/********* Sales View  Content ********************/
+
+.top-bar {
+  padding: 4px;
+  font-size:13pt;
+}
+
+#sales-view {
+  width : 303px;
+}
+
+/** site not supported/no-find deals **/
+
+#not-supported {
+  display: none;
+  width: 264px;
+}
+
+#not-supported .no-find-content-container.top {
+  background-color: #F4F4F6;
+}
+
+#not-supported .contact-message {
+  padding-top: 12px;
+}
+
+#not-supported .honey-logo {
+  display: table-row;
+}
+
+.no-find {
+  vertical-align: middle;
+  color: #40464B;
+}
+
+.no-find-content-container {
+  height: 140px;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #dedede;
+  display:table;
+  width: 100%;
+  font-size: 11pt;
+}
+
+.no-find .centered-message {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+
+.no-find .contact-message {
+  padding-top: 4px;
+}
+
+.contact-message span{
+  color:#3E96F6;
+  cursor: pointer;
+}
+
+.no-find .contact-message span:hover {
+  color: #0C5EB8;
+}
+
+.no-find-content-container .orange-btn {
+  margin-top: 10px;
+  font-size: 10pt;
+  font-weight: 600;
+  height: 15px;
+  width: 120;
+}
+
+.footer .button:active {
+  position:absolute;
+  top:1px;
+}
+
+.footer {
+  width:100%;
+  height:26px;
+  background-color: #757C92;
+  position:fixed;
+  bottom:0px;
+  overflow: visible;
+  display: block;
+}
+
+.footer .button:hover {
+  -webkit-filter: opacity(50%);
+  -moz-filter: opacity(50%);
+  filter: opacity(50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.footer .button {
+  font-size: 18px;
+  color:#FFF;
+  margin-left: 6px;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  position:fixed;
+}
+
+.footer #config {
+  background-image: url('images/config-button-white.png'); 
+  margin-right: 15px;
+  margin-left:auto;
+  width: 23px;
+  height: 24px;
+}
+
+
+/*** Panel contents ***/
+
+.content-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4px 20px 10px;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #dedede;
+  vertical-align: middle;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.sales-data .content-container {
+  padding: 4px 20px 7px;
+}
+
+.content-container.last {
+  padding-bottom: 9px;
+  padding-top: 8px;
+  margin-bottom: 5px;
+  border-bottom-style: none;
+}
+
+.deals-text {
+  padding-bottom: 16px;
+  font-family:'avenir', 'Open Sans', sans-serif;
+  color: #969AA1;
+  font-size: 18px;
+  text-align: center;
+}
+
+.deals-text strong {
+  font-size: 18px;
+  color: #000;
+}
+
+.content-header {
+  padding-bottom: 4px;
+  font-family:'avenir', 'Open Sans', sans-serif;
+  color: #525252;
+  font-size: 14px;
+}
+
+.content-details {
+  color: #878787;
+  font-size: 11px;
+  min-height: 5px;
+}
+
+.coupon-code {
+  font-family:'Open Sans', sans-serif;
+  line-height: 20px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  color: #f07816;
+}
+
+input.coupon-code-box {
+  width: 70px;
+  height: 25px;
+  font-size:13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s; 
+}
+
+input.coupon-code-box:focus {
+  width: 150px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s; 
+} 
+
+span.coupon-box {
+  vertical-align: middle;
+  float: left;
+  position:relative;
+}
+
+.honey-container {
+  position: absolute;
+  display: block;
+  margin-bottom: 20px;
+  background-color: white;
+  width: 100%;
+}
+
+.coupon-container, .sale-container {
+  position: relative;
+  z-index: 999990;
+  display: block;
+}
+
+.copy-message:hover {
+
+   opacity:0.8;
+   /* IE 8- */
+   filter:alpha(opacity=80);
+}
+
+.copy-message:active {
+  top: 1px;
+}
+
+.copy-message {
+  position: absolute; 
+  text-align: center;
+  color: #FFF;
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  width: 100%;
+  background-color: #000;
+
+  opacity:0;
+  /* IE 8- */
+  filter:alpha(opacity=0);
+}
+
+.copy-message .copy-text {
+  font-size: 10pt;
+  font-weight: 900;
+  vertical-align: middle;
+  position: relative;
+  top: 3px;
+}
+
+.copy-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+}
+
+.sale-container {
+  display: none;
+}
+
+/* Trending */
+.trending-image {
+  padding:5px 20px 18px 15px;
+  width:100px;
+  cursor:pointer;
+}
+
+/* sharing buttons, from Colton's finished_saved.tpl */
+.share-options {
+  display:inline-block;
+  padding-left: 15px;
+}
+
+.share-options .share-option {
+  float: right;
+  display:table;
+}
+
+.share-options #share-option-button {
+  position: relative;
+  padding: 0;
+  background: #ef9632;
+  border: none;
+}
+
+.share-options .btn.share a {
+  text-decoration: none;
+}
+.share-options .share-email {
+  background: #dd4b39;
+}
+.share-options span.share-email:hover {
+  background: #e46f61;
+}
+.share-options .share-twitter {
+  background: #55acee;
+}
+.share-options span.share-twitter:hover {
+  background: #77bdf1;
+}
+.share-options .share-facebook {
+  background: #45639e;
+}
+.share-options span.share-facebook:hover {
+  background: #617fba;
+}
+
+.share-options .ss-icon { 
+  font-family: "SSSocialCircle";
+  width:25px;
+  height:25px;
+  font-size: 14px;
+  color:#FFF;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;   
+}
+
+.share-options .ss-icon:hover {
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  -ms--transform: rotate(720deg);
+  transform: rotate(720deg);
+  -webkit-transition: all 1.8s;
+  -moz-transition: all 1.8s;
+  -o-transition: all 1.8;
+  -ms-transition: all 1.8s;
+  transition: all 1.8s; 
+}
+
+.ss-image {
+  width: 15px;
+}
+
+.share-facebook .ss-image {
+  width: 17px;
+}
+
+/*  some shenanigans right here
+
+.launchpad-content:hover {
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  -ms--transform: rotate(720deg);
+  transform: rotate(720deg);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 1.0s; 
+} */
+
+.orange-btn {
+  display: block;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.42857143;
+  border-radius: 2px;     
+  width: 140px;
+  height: 42px;
+  margin: 0 auto;
+  background-color: #E79126;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+.orange-btn:hover {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  background-color: #F3AD01;
+}
+
+.coupon-box.orange-btn {
+  width: 70px;
+  height: 25px;
+  padding: 5px 4px;
+  border: none;
+  margin-top: 0;
+  font-size: 9pt;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.sales .content-container {
+  padding: 7px 20px;
+}
+
+
+/****  INSTANT CASH CSS *****/
+#cash {
+  display:none;
+}
+
+#cash .sales-tab-btn {
+  width: 60px;  /* this is set in $l.initHoneyCash(), actually */
+}
+
+#cash-tab .cash-container{
+  text-align: center;
+  padding: 20px;
+  height: 220px;
+  transition: .3s;
+}
+
+#cash-tab .cash-message {
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+#cash-tab .large-text {
+  color : #4F4E4E;
+  font-weight: 600;
+}
+
+#cash-tab .cash-percent-large {
+  font-size: 21pt;
+}
+
+#cash-tab .message {
+  font-size: 14pt;
+}
+
+#cash-tab #activate-cash {
+  width: 140px;
+  height: auto;
+}
+
+#cash-tab .cash-active {
+  display: none;
+}
+
+#cash-tab .time-remaining {
+  padding: 10px;
+  color : #4F4E4E;
+}
+
+.clock-icon {
+  font-family: "SSStandard";
+  padding-right: 10px;
+  color: orange;
+}
+
+.cash-active {
+  display:none;
+  font-size: 15pt;
+}
+
+.cash-active .small-text {
+  padding-top: 6px;
+  font-size: 11pt;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+
+.checkmark {
+  font-family: "SSStandard";
+  padding-left: 10px;
+  color : #D3812D;
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

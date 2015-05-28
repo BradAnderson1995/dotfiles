@@ -1,0 +1,407 @@
+{
+   "InternalTabs": {
+      "message": "您不能評價本機檔案或內部分頁"
+   },
+   "VoteThank": {
+      "message": "非常感謝！您的投票已成功儲存。"
+   },
+   "anonymousUser": {
+      "message": "匿名使用者"
+   },
+   "castYourVote": {
+      "message": "投下您的一票"
+   },
+   "checkAll": {
+      "message": "（請點選所有符合的選項）"
+   },
+   "close": {
+      "message": "關閉"
+   },
+   "corporate": {
+      "message": "企業網站"
+   },
+   "currentVote": {
+      "message": "總體評價"
+   },
+   "detailsHeadline": {
+      "message": "Avast 已掃描此網站"
+   },
+   "detailsMalwareNo": {
+      "message": "沒有偵測到惡意軟體"
+   },
+   "detailsMalwareYes": {
+      "message": "偵測到惡意軟體！"
+   },
+   "detailsPhishingNo": {
+      "message": "沒有偵測到網路釣魚"
+   },
+   "detailsPhishingYes": {
+      "message": "偵測到網路釣魚！"
+   },
+   "disabledTab": {
+      "message": "您不能評價本機檔案或內部分頁"
+   },
+   "dntAdTrackingNetworks": {
+      "message": "廣告追蹤"
+   },
+   "dntAllowed": {
+      "message": "已允許"
+   },
+   "dntBlocked": {
+      "message": "已攔截"
+   },
+   "dntHeadline": {
+      "message": "%s 家公司嘗試追蹤您"
+   },
+   "dntNetworks": {
+      "message": "網路"
+   },
+   "dntNetworksDetected": {
+      "message": "%s 個網路已偵測"
+   },
+   "dntOthersNetworks": {
+      "message": "其他"
+   },
+   "dntSocialNetworks": {
+      "message": "社交網路"
+   },
+   "dntWebAnalyticsNetworks": {
+      "message": "網頁分析"
+   },
+   "drugs": {
+      "message": "酒類 / 毒品"
+   },
+   "error": {
+      "message": "錯誤"
+   },
+   "errorUnexpected": {
+      "message": "意外錯誤"
+   },
+   "gambling": {
+      "message": "賭博"
+   },
+   "howLike": {
+      "message": "請問您有多喜歡這個網站？"
+   },
+   "illegal": {
+      "message": "盜版 / 違法"
+   },
+   "it": {
+      "message": "科技 / 下載"
+   },
+   "loginAnonymous": {
+      "message": "為匿名使用者"
+   },
+   "loginDesc": {
+      "message": "請填入您的 my.avast.com 帳戶的登入資料："
+   },
+   "loginError": {
+      "message": "登入失敗"
+   },
+   "loginLogin": {
+      "message": "登入"
+   },
+   "loginLogout": {
+      "message": "登出"
+   },
+   "loginName": {
+      "message": "名稱："
+   },
+   "loginPswd": {
+      "message": "密碼："
+   },
+   "malwareNext": {
+      "message": "下載 Avast 免費家用防毒"
+   },
+   "malwareSite": {
+      "message": "這個網站可能會對您的電腦造成損害。"
+   },
+   "malwareSiteRec": {
+      "message": "我們建議您安裝 Avast 防毒軟體來掃描您的電腦。"
+   },
+   "news": {
+      "message": "新聞 / 部落格"
+   },
+   "noRating": {
+      "message": "此網站沒有任何評價資訊"
+   },
+   "noWeight": {
+      "message": "（票數不足）"
+   },
+   "phishingBack": {
+      "message": "帶我離開這裡"
+   },
+   "phishingClose": {
+      "message": "忽略警告"
+   },
+   "phishingCreditNumber": {
+      "message": "您似乎正在一個信譽不佳的網站中嘗試輸入密碼或是信用卡卡號。請再次確認此網站是否可以信任。在不受信任的網站上輸入您的個人資料將可能造成安全性的風險。"
+   },
+   "phishingPhishingSite": {
+      "message": "此網站已被標示為釣魚網站。"
+   },
+   "phishingTrust": {
+      "message": "信任此網域"
+   },
+   "phishingWarning": {
+      "message": "警告"
+   },
+   "pornography": {
+      "message": "色情網站"
+   },
+   "ratingAverage": {
+      "message": "此網站的評價普通"
+   },
+   "ratingBad": {
+      "message": "此網站的評價不佳"
+   },
+   "ratingCommunity": {
+      "message": "%s社群評價"
+   },
+   "ratingDone": {
+      "message": "完成"
+   },
+   "ratingGood": {
+      "message": "此網站的評價良好"
+   },
+   "ratingLevelAverage": {
+      "message": "普通的"
+   },
+   "ratingLevelBad": {
+      "message": "糟糕的"
+   },
+   "ratingLevelPositive": {
+      "message": "正面的"
+   },
+   "ratingLevelUndefined": {
+      "message": "無"
+   },
+   "ratingNegative": {
+      "message": "為什麼您對您的使用經驗給予負面評價？"
+   },
+   "ratingNoRate": {
+      "message": "我現在不想給予評價"
+   },
+   "ratingPending": {
+      "message": "正在取得評價資訊"
+   },
+   "ratingPositive": {
+      "message": "為什麼您對您的使用經驗給予正面評價？"
+   },
+   "ratingRate": {
+      "message": "您對您的使用經驗評價如何？"
+   },
+   "ratingTextAverage": {
+      "message": "這個網站的信譽不佳"
+   },
+   "ratingTextBad": {
+      "message": "這個網站不安全"
+   },
+   "ratingTextPositive": {
+      "message": "這個網站是安全的"
+   },
+   "ratingTextUndefined": {
+      "message": "未知的網站"
+   },
+   "safeZoneDecline": {
+      "message": "不要提示在安全地帶中開啟 "
+   },
+   "safeZoneDesc": {
+      "message": "Avast 建議您切換到「安全地帶」"
+   },
+   "safeZoneFeedback": {
+      "message": "別擔心，該網址已經在安全地帶中開啟"
+   },
+   "safeZoneNo": {
+      "message": "否"
+   },
+   "safeZoneYes": {
+      "message": "立即切換"
+   },
+   "settingsReset": {
+      "message": "重設為預設值"
+   },
+   "settingsSave": {
+      "message": "存檔"
+   },
+   "settingscommunityIQ": {
+      "message": "統計資訊"
+   },
+   "settingscommunityIQDesc": {
+      "message": "允許傳送匿名資料以便增強我們的服務"
+   },
+   "settingsdnt": {
+      "message": "不要追蹤我"
+   },
+   "settingsdnt0": {
+      "message": "隱私防護"
+   },
+   "settingsdnt2": {
+      "message": "不要追蹤我"
+   },
+   "settingsdntAdTrackingDesc": {
+      "message": "預設攔截廣告追蹤"
+   },
+   "settingsdntDesc": {
+      "message": "偵測並攔截廣告並避免網頁分析網站偷偷追蹤您"
+   },
+   "settingsdntOthersDesc": {
+      "message": "預設攔截其他"
+   },
+   "settingsdntSocialDesc": {
+      "message": "預設攔截社交網路"
+   },
+   "settingsdntWebAnalyticsDesc": {
+      "message": "預設攔截網頁分析"
+   },
+   "settingsphishing": {
+      "message": "反網路釣魚"
+   },
+   "settingsphishing0": {
+      "message": "網頁瀏覽防護"
+   },
+   "settingsphishing2": {
+      "message": "反網路釣魚"
+   },
+   "settingsphishingDesc": {
+      "message": "掃描網站上是否有惡意軟體並防止網路釣魚"
+   },
+   "settingssafeZone": {
+      "message": "安全地帶"
+   },
+   "settingssafeZoneDesc": {
+      "message": "切換到安全地帶瀏覽金融網站（需要安裝 Avast 防毒軟體）"
+   },
+   "settingsserp": {
+      "message": "搜尋引擎結果"
+   },
+   "settingsserpDesc": {
+      "message": "啟用搜尋引擎結果頁面的彩色圖示"
+   },
+   "settingsserpPopupDesc": {
+      "message": "啟用搜尋引擎結果頁面的提示視窗"
+   },
+   "settingssiteCorrect": {
+      "message": "SiteCorrect"
+   },
+   "settingssiteCorrectAutoDesc": {
+      "message": "略過提示並自動重新導向到合法的網站"
+   },
+   "settingssiteCorrectDesc": {
+      "message": "偵測及修正輸入錯誤的網址並導向合法的網站"
+   },
+   "sfzoneAlways": {
+      "message": "是，永遠如此"
+   },
+   "sfzoneDesc": {
+      "message": "您已進入一個網路銀行網站。您要在 Avast 安全地帶中開啟此網站嗎？"
+   },
+   "sfzoneHeadline": {
+      "message": "Avast 安全地帶"
+   },
+   "sfzoneNever": {
+      "message": "永遠不要"
+   },
+   "sfzoneNo": {
+      "message": "否"
+   },
+   "sfzoneSwitch": {
+      "message": "切換到 Avast 安全地帶"
+   },
+   "sfzoneYes": {
+      "message": "是"
+   },
+   "shopping": {
+      "message": "購物網站"
+   },
+   "sideDashboard": {
+      "message": "My Avast"
+   },
+   "sideDetails": {
+      "message": "更多訊息"
+   },
+   "sideRate": {
+      "message": "立即評價"
+   },
+   "sideSettings": {
+      "message": "設定"
+   },
+   "sitecorrectAuto": {
+      "message": "從現在起自動帶我到已知的正確網站"
+   },
+   "sitecorrectBarButton": {
+      "message": "我沒弄錯，請帶我回去"
+   },
+   "sitecorrectBarMsg": {
+      "message": "SiteCorrect：從 %s 自動導向"
+   },
+   "sitecorrectHeadline": {
+      "message": "SiteCorrect"
+   },
+   "sitecorrectHelp": {
+      "message": "若要設定 Avast SiteCorrect 功能，請開啟 Avast 使用者介面，前往其他防護，瀏覽器防護並使用「設定」按鈕。"
+   },
+   "sitecorrectMean": {
+      "message": "您是不是想前往 %s？"
+   },
+   "sitecorrectNo": {
+      "message": "否，我真的是想前往 %s"
+   },
+   "sitecorrectText": {
+      "message": "這可能不是您原本想進入的網站。"
+   },
+   "sitecorrectYes": {
+      "message": "是"
+   },
+   "social": {
+      "message": "社交 / 遊戲"
+   },
+   "thanksHeadline": {
+      "message": "感謝您的評分！"
+   },
+   "thanksMessage": {
+      "message": "已傳送您的投票。"
+   },
+   "title": {
+      "message": "Avast 線上安全設定"
+   },
+   "topBarDetails": {
+      "message": "檢視詳細資訊"
+   },
+   "topBarRatingAverage": {
+      "message": "%s 被評價為普通"
+   },
+   "topBarRatingBad": {
+      "message": "%s 被評價為危險"
+   },
+   "topBarRatingGood": {
+      "message": "%s 被評價為安全"
+   },
+   "violence": {
+      "message": "武器 / 暴力"
+   },
+   "vote": {
+      "message": "投票"
+   },
+   "voteNegative": {
+      "message": "不佳"
+   },
+   "votePositive": {
+      "message": "良好"
+   },
+   "webrepDisabled": {
+      "message": "已停用 WebRep"
+   },
+   "weight1": {
+      "message": "（以少量的票數為根據）"
+   },
+   "weight2": {
+      "message": "（以一定的票數為根據）"
+   },
+   "weight3": {
+      "message": "（以大量的票數為根據）"
+   },
+   "whatTypeContent": {
+      "message": "此網站提供的是什麼樣的內容？"
+   }
+}

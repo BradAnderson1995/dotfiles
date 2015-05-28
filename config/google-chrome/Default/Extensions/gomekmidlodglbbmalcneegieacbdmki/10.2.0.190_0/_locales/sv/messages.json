@@ -1,0 +1,407 @@
+{
+   "InternalTabs": {
+      "message": "Du kan inte bedöma lokala filer eller interna flikar"
+   },
+   "VoteThank": {
+      "message": "Tack! Din röst har sparats."
+   },
+   "anonymousUser": {
+      "message": "Anonym användare"
+   },
+   "castYourVote": {
+      "message": "Ge din bedömning"
+   },
+   "checkAll": {
+      "message": "(Bocka i de rutor som är relevanta)"
+   },
+   "close": {
+      "message": "Stäng"
+   },
+   "corporate": {
+      "message": "Företag"
+   },
+   "currentVote": {
+      "message": "Generell bedömning"
+   },
+   "detailsHeadline": {
+      "message": "Avast har skannat denna sida"
+   },
+   "detailsMalwareNo": {
+      "message": "Inga sabotageprogram har upptäckts"
+   },
+   "detailsMalwareYes": {
+      "message": "Sabotageprogram har upptäckts!"
+   },
+   "detailsPhishingNo": {
+      "message": "Inget nätfiske har upptäckts"
+   },
+   "detailsPhishingYes": {
+      "message": "Nätfiske har upptäckts!"
+   },
+   "disabledTab": {
+      "message": "Du kan inte bedöma lokala filer eller interna flikar"
+   },
+   "dntAdTrackingNetworks": {
+      "message": "Reklamspårning"
+   },
+   "dntAllowed": {
+      "message": "tillåten"
+   },
+   "dntBlocked": {
+      "message": "blockerad"
+   },
+   "dntHeadline": {
+      "message": "%s företag har försökt spåra dig"
+   },
+   "dntNetworks": {
+      "message": "Nätverk"
+   },
+   "dntNetworksDetected": {
+      "message": "%s nätverk har upptäckts"
+   },
+   "dntOthersNetworks": {
+      "message": "Annat"
+   },
+   "dntSocialNetworks": {
+      "message": "Sociala nätverk"
+   },
+   "dntWebAnalyticsNetworks": {
+      "message": "Webbanalys"
+   },
+   "drugs": {
+      "message": "Alkohol / Droger"
+   },
+   "error": {
+      "message": "Fel"
+   },
+   "errorUnexpected": {
+      "message": "Oväntat fel"
+   },
+   "gambling": {
+      "message": "Lotterispel"
+   },
+   "howLike": {
+      "message": "Vad tycker du om denna sida?"
+   },
+   "illegal": {
+      "message": "Piratprogram / Illegalt"
+   },
+   "it": {
+      "message": "IT / Nedladdning"
+   },
+   "loginAnonymous": {
+      "message": "Som anonym användare"
+   },
+   "loginDesc": {
+      "message": "Fyll i dina inloggningsuppgifter för ditt my.avast.com-konto:"
+   },
+   "loginError": {
+      "message": "Inloggningen misslyckades"
+   },
+   "loginLogin": {
+      "message": "Logga in"
+   },
+   "loginLogout": {
+      "message": "Logga ut"
+   },
+   "loginName": {
+      "message": "Namn:"
+   },
+   "loginPswd": {
+      "message": "Lösenord:"
+   },
+   "malwareNext": {
+      "message": "Ladda ned Avast Free Antivirus"
+   },
+   "malwareSite": {
+      "message": "Denna webbplats kan skada din dator."
+   },
+   "malwareSiteRec": {
+      "message": "Vi rekommenderar att du installerar Avast Antivirus för att skanna din dator."
+   },
+   "news": {
+      "message": "Nyheter / Blogg"
+   },
+   "noRating": {
+      "message": "Denna sida har ingen bedömning ännu"
+   },
+   "noWeight": {
+      "message": "(inte tillräckligt med bedömningar)"
+   },
+   "phishingBack": {
+      "message": "Ta mig härifrån"
+   },
+   "phishingClose": {
+      "message": "Ignorera varningen"
+   },
+   "phishingCreditNumber": {
+      "message": "Det ser ut som om du håller på att skriva in ett lösenord eller ett kreditkortsnummer på en webbsida som har ett dåligt rykte/bedömning. Kontrollera noggrant att sidan är äkta. Att skriva in sina personliga uppgifter på en sida som har dåligt rykte/bedömning är en säkerhetsrisk."
+   },
+   "phishingPhishingSite": {
+      "message": "Denna webbplats har markerats som en sida för nätfiske."
+   },
+   "phishingTrust": {
+      "message": "Lita på denna domän"
+   },
+   "phishingWarning": {
+      "message": "Varning"
+   },
+   "pornography": {
+      "message": "Pornografi"
+   },
+   "ratingAverage": {
+      "message": "Denna sida har en genomsnittlig bedömning"
+   },
+   "ratingBad": {
+      "message": "Denna sida har en dålig bedömning"
+   },
+   "ratingCommunity": {
+      "message": "%s betyg från communityn"
+   },
+   "ratingDone": {
+      "message": "Klar"
+   },
+   "ratingGood": {
+      "message": "Denna sida har en bra bedömning"
+   },
+   "ratingLevelAverage": {
+      "message": "Medel"
+   },
+   "ratingLevelBad": {
+      "message": "Dåligt"
+   },
+   "ratingLevelPositive": {
+      "message": "Positivt"
+   },
+   "ratingLevelUndefined": {
+      "message": "Inget"
+   },
+   "ratingNegative": {
+      "message": "Varför betygsatte du upplevelsen som negativ?"
+   },
+   "ratingNoRate": {
+      "message": "Jag vill inte betygsätta nu"
+   },
+   "ratingPending": {
+      "message": "Hämtar bedömning"
+   },
+   "ratingPositive": {
+      "message": "Varför betygsatte du upplevelsen som positiv?"
+   },
+   "ratingRate": {
+      "message": "Hur betygsätter du din upplevelse?"
+   },
+   "ratingTextAverage": {
+      "message": "denna webbplats har dåligt rykte"
+   },
+   "ratingTextBad": {
+      "message": "denna webbplats är osäker"
+   },
+   "ratingTextPositive": {
+      "message": "denna webbplats är säker"
+   },
+   "ratingTextUndefined": {
+      "message": "okänd webbplats"
+   },
+   "safeZoneDecline": {
+      "message": "Använd inte Säker Zon på "
+   },
+   "safeZoneDesc": {
+      "message": "Avast rekommenderar dig att växla till Säker Zon"
+   },
+   "safeZoneFeedback": {
+      "message": "Den önskade webbsidan har öppnats i Säker Zon för din säkerhets skull"
+   },
+   "safeZoneNo": {
+      "message": "Nej"
+   },
+   "safeZoneYes": {
+      "message": "Växla nu"
+   },
+   "settingsReset": {
+      "message": "Återställ till standardinställningen"
+   },
+   "settingsSave": {
+      "message": "Spara"
+   },
+   "settingscommunityIQ": {
+      "message": "Statistik"
+   },
+   "settingscommunityIQDesc": {
+      "message": "Tillåt att anonym data skickas för att förbättra vår service"
+   },
+   "settingsdnt": {
+      "message": "Spåra inte"
+   },
+   "settingsdnt0": {
+      "message": "Integritetsskydd"
+   },
+   "settingsdnt2": {
+      "message": "Spåra inte"
+   },
+   "settingsdntAdTrackingDesc": {
+      "message": "Blockera reklamspårning som standardinställning"
+   },
+   "settingsdntDesc": {
+      "message": "Upptäcker och blockerar oönskad reklam och skyddar webbanalyssidor från att spåra dig"
+   },
+   "settingsdntOthersDesc": {
+      "message": "Blockera annat som standardinställning"
+   },
+   "settingsdntSocialDesc": {
+      "message": "Blockera sociala nätverk som standardinställning"
+   },
+   "settingsdntWebAnalyticsDesc": {
+      "message": "Blockera webbanalyser som standardinställning"
+   },
+   "settingsphishing": {
+      "message": "Skydd mot nätfiske"
+   },
+   "settingsphishing0": {
+      "message": "Surfskydd"
+   },
+   "settingsphishing2": {
+      "message": "Skydd mot nätfiske"
+   },
+   "settingsphishingDesc": {
+      "message": "Skannar webbsidor efter sabotageprogram och förhindrar nätfiske"
+   },
+   "settingssafeZone": {
+      "message": "Säker Zon"
+   },
+   "settingssafeZoneDesc": {
+      "message": "Växla till Säker Zon för banksidor (Avast Antivirus måste vara installerat)"
+   },
+   "settingsserp": {
+      "message": "Sökresultat"
+   },
+   "settingsserpDesc": {
+      "message": "Aktivera färger på sökresultatsidan"
+   },
+   "settingsserpPopupDesc": {
+      "message": "Aktivera popuppmeddelanden på sökresultatsidan"
+   },
+   "settingssiteCorrect": {
+      "message": "SiteCorrect"
+   },
+   "settingssiteCorrectAutoDesc": {
+      "message": "Hoppa över prompten och skicka mig automatiskt till legitima webbplatser"
+   },
+   "settingssiteCorrectDesc": {
+      "message": "Upptäcker och korrigerar felstavade URL:er och skickar dig till legitima och tillförlitliga webbplatser"
+   },
+   "sfzoneAlways": {
+      "message": "Ja, alltid"
+   },
+   "sfzoneDesc": {
+      "message": "Du har öppnat en banksida. Vill du öppna den i Avast Säker Zon?"
+   },
+   "sfzoneHeadline": {
+      "message": "Avast Säker Zon"
+   },
+   "sfzoneNever": {
+      "message": "Aldrig"
+   },
+   "sfzoneNo": {
+      "message": "Nej"
+   },
+   "sfzoneSwitch": {
+      "message": "Växla till Avast Säker Zon"
+   },
+   "sfzoneYes": {
+      "message": "Ja"
+   },
+   "shopping": {
+      "message": "Shopping"
+   },
+   "sideDashboard": {
+      "message": "Mitt Avast"
+   },
+   "sideDetails": {
+      "message": "Få reda på mer"
+   },
+   "sideRate": {
+      "message": "Betygsätt nu"
+   },
+   "sideSettings": {
+      "message": "Inställningar"
+   },
+   "sitecorrectAuto": {
+      "message": "Ta mig automatiskt till kända korrekta webbsidor från och med nu"
+   },
+   "sitecorrectBarButton": {
+      "message": "Detta var inte ett misstag, ta mig tillbaka"
+   },
+   "sitecorrectBarMsg": {
+      "message": "SiteCorrect: automatisk omdirigering från %s"
+   },
+   "sitecorrectHeadline": {
+      "message": "SiteCorrect"
+   },
+   "sitecorrectHelp": {
+      "message": "För att konfigurera funktionen SiteCorrect, öppna huvudfönstret för Avast, välj Ytterligare skydd och Webbläsarskydd. Klicka sedan på knappen Inställningar."
+   },
+   "sitecorrectMean": {
+      "message": "Menar du %s ?"
+   },
+   "sitecorrectNo": {
+      "message": "Nej, jag menade egentligen %s"
+   },
+   "sitecorrectText": {
+      "message": "Detta är troligtvis inte den hemsida du vill besöka."
+   },
+   "sitecorrectYes": {
+      "message": "Ja"
+   },
+   "social": {
+      "message": "Socialt / Spel"
+   },
+   "thanksHeadline": {
+      "message": "Tack för ditt betyg!"
+   },
+   "thanksMessage": {
+      "message": "Ditt betyg har skickats."
+   },
+   "title": {
+      "message": "Inställningar för Avast Online Security"
+   },
+   "topBarDetails": {
+      "message": "Visa detaljer"
+   },
+   "topBarRatingAverage": {
+      "message": "%s är betygsatt som okej"
+   },
+   "topBarRatingBad": {
+      "message": "%s är betygsatt som farlig"
+   },
+   "topBarRatingGood": {
+      "message": "%s är betygsatt som säker"
+   },
+   "violence": {
+      "message": "Vapen / Våld"
+   },
+   "vote": {
+      "message": "Rösta"
+   },
+   "voteNegative": {
+      "message": "negativ"
+   },
+   "votePositive": {
+      "message": "positiv"
+   },
+   "webrepDisabled": {
+      "message": "WebRep är inaktiverad"
+   },
+   "weight1": {
+      "message": "(baserat på ett litet antal bedömningar)"
+   },
+   "weight2": {
+      "message": "(baserat på ett begränsat antal bedömningar)"
+   },
+   "weight3": {
+      "message": "(baserat på många bedömningar)"
+   },
+   "whatTypeContent": {
+      "message": "Vilket typ av innehåll finns på denna sida?"
+   }
+}

@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": [ "moment.js", "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Stop Facebook from tracking the webpages you go to.",
+   "icons": {
+      "128": "128.png",
+      "48": "48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDk4UprGSIHGNRo2loYk3lUv3G8RTEtTO/vpXP1LPTBnodFFuxS8FmVJ3ycG5HrIOA4F3ycC/qHsQ18Vz2nh1GXal0Ea45pOK6/15AXAOHH6mz9rfVB5E4DaUXBAfoDZovxgJ/8tTluyW1AoaWgWvDmzTp/mBf9gNqgaYTT1qqAgQIDAQAB",
+   "manifest_version": 2,
+   "name": "Facebook Disconnect",
+   "permissions": [ "contextMenus", "notifications", "webRequest", "webRequestBlocking", "storage", "cookies", "idle", "notifications", "unlimitedStorage", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6.6"
+}

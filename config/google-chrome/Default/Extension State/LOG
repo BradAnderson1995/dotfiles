@@ -1,0 +1,14 @@
+2015/05/22-17:32:26.549 2486 Reusing MANIFEST /home/brad/.config/google-chrome/Default/Extension State/MANIFEST-000001
+2015/05/22-17:32:26.550 2486 Recovering log #61
+2015/05/22-17:32:26.550 2486 Level-0 table #63: started
+2015/05/22-17:32:26.554 2486 Level-0 table #63: 35285 bytes OK
+2015/05/22-17:32:26.558 2486 Delete type=0 #61
+2015/05/22-17:32:26.558 2641 Compacting 4@0 + 1@1 files
+2015/05/22-17:32:26.574 2641 Generated table #65: 5 keys, 6255 bytes
+2015/05/22-17:32:26.574 2641 Compacted 4@0 + 1@1 files => 6255 bytes
+2015/05/22-17:32:26.578 2641 compacted to: files[ 0 1 0 0 0 0 0 ]
+2015/05/22-17:32:26.578 2641 Delete type=2 #54
+2015/05/22-17:32:26.578 2641 Delete type=2 #63
+2015/05/22-17:32:26.579 2641 Delete type=2 #52
+2015/05/22-17:32:26.579 2641 Delete type=2 #60
+2015/05/22-17:32:26.579 2641 Delete type=2 #57

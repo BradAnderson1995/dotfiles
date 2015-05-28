@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "scripts/jquery-1.7.2.min.js", "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/tldr-48.png"
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/jquery-1.7.2.min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Too long didn't read? Let TLDR shorten it.",
+   "icons": {
+      "128": "icons/tldr-128x128.png",
+      "16": "icons/tldr-48x48.png",
+      "48": "icons/tldr-48x48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDrBjRVJW+1uI5sKvNGWK/0BhUoxjns8Xka3HXR3OlzFWkA/hg79/EBBy6eNS1kmxenHd3EztHQ+F5KdYHb8D2ZoRwlnSLXJWxwh0VFjDMekx/j1R1Qj2uHII+HgCVUMpELGMnTnzHV2R0a8Jcxh2m4wl91zohjofbBufpGNBbiKwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18",
+   "name": "TLDR",
+   "options_page": "html/options.html",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "contextMenus", "background" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1",
+   "web_accessible_resources": [ "html/overlay.html", "img/preloader.gif" ]
+}

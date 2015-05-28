@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap pam_environment"
+files="bashrc vimrc vim config zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap pam_environment"
 # list of files/folders to symlink in homedir
 
 ##########
@@ -46,11 +46,11 @@ else
     # If zsh isn't installed, get the platform of the current machine
     platform=$(uname);
     # If the platform is Linux, try an apt-get to install zsh and then recurse
-    if [[ $platform == 'Linux' ]]; then
+    if [ $platform == 'Linux' ]; then
         sudo apt-get install zsh
         install_zsh
     # If the platform is OS X, tell the user to install zsh :)
-    elif [[ $platform == 'Darwin' ]]; then
+    elif [ $platform == 'Darwin' ]; then
         echo "Please install zsh, then re-run this script!"
         exit
     fi

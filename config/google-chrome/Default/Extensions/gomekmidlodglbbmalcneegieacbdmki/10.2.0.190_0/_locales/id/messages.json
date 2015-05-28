@@ -1,0 +1,407 @@
+{
+   "InternalTabs": {
+      "message": "anda tidak dapat menilai file lokal atau tabulasi internal"
+   },
+   "VoteThank": {
+      "message": "Terima Kasih! Pemilihan anda berhasil disimpan."
+   },
+   "anonymousUser": {
+      "message": "Penguna tanpa nama"
+   },
+   "castYourVote": {
+      "message": "Memberikan pilihan anda"
+   },
+   "checkAll": {
+      "message": "(Periksa semua yang berlaku)"
+   },
+   "close": {
+      "message": "Tutup"
+   },
+   "corporate": {
+      "message": "Perusahaan"
+   },
+   "currentVote": {
+      "message": "Predikat secara keseluruhan"
+   },
+   "detailsHeadline": {
+      "message": "Avast telah memindai situs ini"
+   },
+   "detailsMalwareNo": {
+      "message": "Tidak ditemukan malware"
+   },
+   "detailsMalwareYes": {
+      "message": "Terditeksi Malware!"
+   },
+   "detailsPhishingNo": {
+      "message": "Tidak ditemukan phishing"
+   },
+   "detailsPhishingYes": {
+      "message": "Terditeksi Phishing!"
+   },
+   "disabledTab": {
+      "message": "anda tidak dapat menilai file lokal atau tabulasi internal"
+   },
+   "dntAdTrackingNetworks": {
+      "message": "Pelacakan Iklan"
+   },
+   "dntAllowed": {
+      "message": "ijinkan"
+   },
+   "dntBlocked": {
+      "message": "blokir"
+   },
+   "dntHeadline": {
+      "message": "%s perusahaan berusaha melacak anda"
+   },
+   "dntNetworks": {
+      "message": "Jaringan"
+   },
+   "dntNetworksDetected": {
+      "message": "%s terditeksi jaringan"
+   },
+   "dntOthersNetworks": {
+      "message": "Lain-lain"
+   },
+   "dntSocialNetworks": {
+      "message": "Jaringan sosial"
+   },
+   "dntWebAnalyticsNetworks": {
+      "message": "Analisa Situs"
+   },
+   "drugs": {
+      "message": "Alkohol / Obat bius"
+   },
+   "error": {
+      "message": "Kesalahan"
+   },
+   "errorUnexpected": {
+      "message": "Kesalahan tidak terduga"
+   },
+   "gambling": {
+      "message": "Perjudian"
+   },
+   "howLike": {
+      "message": "Apa pendapat anda tentang situs ini?"
+   },
+   "illegal": {
+      "message": "Warez / Ilegal"
+   },
+   "it": {
+      "message": "IT / Unduh"
+   },
+   "loginAnonymous": {
+      "message": "Sebagai penguna tanpa nama"
+   },
+   "loginDesc": {
+      "message": "Isi data-data login Anda untuk account my.avast.com Anda:"
+   },
+   "loginError": {
+      "message": "Login tidak berhasil"
+   },
+   "loginLogin": {
+      "message": "Login"
+   },
+   "loginLogout": {
+      "message": "Keluar"
+   },
+   "loginName": {
+      "message": "Nama:"
+   },
+   "loginPswd": {
+      "message": "Kata Kunci:"
+   },
+   "malwareNext": {
+      "message": "Unduh Avast Free Antivirus"
+   },
+   "malwareSite": {
+      "message": "Situs ini bisa membahayakan komputer Anda."
+   },
+   "malwareSiteRec": {
+      "message": "Kami menyarankan Anda untuk menginstal Avast Antivirus untuk memindai komputer Anda."
+   },
+   "news": {
+      "message": "Berita / Blog"
+   },
+   "noRating": {
+      "message": "Situs ini tidak ada predikat"
+   },
+   "noWeight": {
+      "message": "(tidak cukup pemilih)"
+   },
+   "phishingBack": {
+      "message": "Keluarkan saya dari sini"
+   },
+   "phishingClose": {
+      "message": "Abaikan Peringatan"
+   },
+   "phishingCreditNumber": {
+      "message": "Tampaknya Anda mencoba untuk mengetik password atau nomor kartu kredit pada sebuah situs dengan reputasi buruk. Silahkan periksa bahwa situs tersebut adalah asli. Memasukkan informasi pribadi Anda pada sebuah situs tidak terpercaya dapat menimbulkan risiko keamanan."
+   },
+   "phishingPhishingSite": {
+      "message": "Situs ini telah ditandai sebagai situs phishing."
+   },
+   "phishingTrust": {
+      "message": "Percaya domain ini"
+   },
+   "phishingWarning": {
+      "message": "Peringatan"
+   },
+   "pornography": {
+      "message": "Pornografi"
+   },
+   "ratingAverage": {
+      "message": "Situs ini memiliki predikat rata-rata"
+   },
+   "ratingBad": {
+      "message": "Situs ini memiliki predikat buruk"
+   },
+   "ratingCommunity": {
+      "message": "%s penilaian komunitas"
+   },
+   "ratingDone": {
+      "message": "Selesai"
+   },
+   "ratingGood": {
+      "message": "Situs ini memiliki predikat baik"
+   },
+   "ratingLevelAverage": {
+      "message": "Rata-rata"
+   },
+   "ratingLevelBad": {
+      "message": "Buruk"
+   },
+   "ratingLevelPositive": {
+      "message": "Positif"
+   },
+   "ratingLevelUndefined": {
+      "message": "Tidak"
+   },
+   "ratingNegative": {
+      "message": "Mengapa anda menilai pengalaman anda menjadi negatif?"
+   },
+   "ratingNoRate": {
+      "message": "Saya tidak ingin melakukan penilaian sekarang"
+   },
+   "ratingPending": {
+      "message": "Mengambil predikat"
+   },
+   "ratingPositive": {
+      "message": "Mengapa anda menilai pengalaman anda menjadi positif?"
+   },
+   "ratingRate": {
+      "message": "Apakah anda memiliki pengalaman dalam penilaian?"
+   },
+   "ratingTextAverage": {
+      "message": "situs ini memiliki reputasi buruk"
+   },
+   "ratingTextBad": {
+      "message": "situs ini tidak aman"
+   },
+   "ratingTextPositive": {
+      "message": "situs ini aman"
+   },
+   "ratingTextUndefined": {
+      "message": "situs tidak dikenal"
+   },
+   "safeZoneDecline": {
+      "message": "Jangan tawarkan AreaAman untuk "
+   },
+   "safeZoneDesc": {
+      "message": "Avast merekomendasikan anda beralih ke AreaAman"
+   },
+   "safeZoneFeedback": {
+      "message": "Untuk rasa percaya anda, URL telah dibuka dalam AreaAman"
+   },
+   "safeZoneNo": {
+      "message": "Tidak"
+   },
+   "safeZoneYes": {
+      "message": "Tukar sekarang"
+   },
+   "settingsReset": {
+      "message": "Reset ke default"
+   },
+   "settingsSave": {
+      "message": "Simpan"
+   },
+   "settingscommunityIQ": {
+      "message": "Statistik"
+   },
+   "settingscommunityIQDesc": {
+      "message": "Memungkinkan pengajuan data anonim untuk meningkatkan layanan kami"
+   },
+   "settingsdnt": {
+      "message": "Jangan melacak"
+   },
+   "settingsdnt0": {
+      "message": "Proteksi Privasi"
+   },
+   "settingsdnt2": {
+      "message": "Jangan melacak"
+   },
+   "settingsdntAdTrackingDesc": {
+      "message": "Blokir pelacakan iklan secara default"
+   },
+   "settingsdntDesc": {
+      "message": "Mendeteksi dan memblok iklan yang tidak diinginkan dan mencegah situs analisis dari pelacakan terhadap Anda secara diam"
+   },
+   "settingsdntOthersDesc": {
+      "message": "Blokir lainnya secara default"
+   },
+   "settingsdntSocialDesc": {
+      "message": "Blokir jaringan sosial secara default"
+   },
+   "settingsdntWebAnalyticsDesc": {
+      "message": "Blokir analisis situs secara default"
+   },
+   "settingsphishing": {
+      "message": "Antiphishing"
+   },
+   "settingsphishing0": {
+      "message": "Proteksi Penjelajahan"
+   },
+   "settingsphishing2": {
+      "message": "Antiphishing"
+   },
+   "settingsphishingDesc": {
+      "message": "Memindai website untuk malware dan mencegah phishing"
+   },
+   "settingssafeZone": {
+      "message": "Area Aman"
+   },
+   "settingssafeZoneDesc": {
+      "message": "Beralih ke AreaAman untuk situs keuangan yang sensitif (memerlukan Avast Antivirus diinstal)"
+   },
+   "settingsserp": {
+      "message": "Hasil mesin pencari"
+   },
+   "settingsserpDesc": {
+      "message": "Aktifkan mewarnai halaman hasil pencarian"
+   },
+   "settingsserpPopupDesc": {
+      "message": "Aktifkan popup pada halaman hasil pencarian"
+   },
+   "settingssiteCorrect": {
+      "message": "KebenaranSitus"
+   },
+   "settingssiteCorrectAutoDesc": {
+      "message": "Lewati dan secara otomatis mengarahkan ke situs yang benar"
+   },
+   "settingssiteCorrectDesc": {
+      "message": "Mendeteksi dan memperbaiki kesalah ketik URL dan mengarahkan ke situs yang benar"
+   },
+   "sfzoneAlways": {
+      "message": "Ya, selalu"
+   },
+   "sfzoneDesc": {
+      "message": "Anda telah memasukkan situs online banking. Apakah Anda ingin membukanya di Avast AreaAman?"
+   },
+   "sfzoneHeadline": {
+      "message": "Avast AreaAman"
+   },
+   "sfzoneNever": {
+      "message": "Tidak pernah"
+   },
+   "sfzoneNo": {
+      "message": "Tidak"
+   },
+   "sfzoneSwitch": {
+      "message": "Ubah ke Avast AreaAman"
+   },
+   "sfzoneYes": {
+      "message": "Ya"
+   },
+   "shopping": {
+      "message": "Belanja"
+   },
+   "sideDashboard": {
+      "message": "Avast Saya"
+   },
+   "sideDetails": {
+      "message": "Pelajari lebih lanjut"
+   },
+   "sideRate": {
+      "message": "Nilai sekarang"
+   },
+   "sideSettings": {
+      "message": "Pengaturan"
+   },
+   "sitecorrectAuto": {
+      "message": "Otomatis sambungkan saya pada situs yang sebenarnya mulai dari saat ini"
+   },
+   "sitecorrectBarButton": {
+      "message": "Ini bukanlah kesalahan, kembalikan saya"
+   },
+   "sitecorrectBarMsg": {
+      "message": "KebenaranSitus: otomatis akan ditujukan dari %s"
+   },
+   "sitecorrectHeadline": {
+      "message": "KebenaranSitus"
+   },
+   "sitecorrectHelp": {
+      "message": "Untuk pengaturan fitur Avast KebenaranSitus, silahkan buka Avast antarmuka pengguna, Perlindungan Tambahan, Perlindungan Browser dan menggunakan tombol Pengaturan."
+   },
+   "sitecorrectMean": {
+      "message": "yang anda maksud %s ?"
+   },
+   "sitecorrectNo": {
+      "message": "Tidak, Saya tidak bermaksud %s"
+   },
+   "sitecorrectText": {
+      "message": "Ini mungkin bukan situs yang Anda ingin tuju."
+   },
+   "sitecorrectYes": {
+      "message": "Ya"
+   },
+   "social": {
+      "message": "Sosial / Permainan"
+   },
+   "thanksHeadline": {
+      "message": "Terima kasih atas penilaian anda!"
+   },
+   "thanksMessage": {
+      "message": "Pemilihan anda telah disampaikan."
+   },
+   "title": {
+      "message": "Pengaturan keamanan online Avast"
+   },
+   "topBarDetails": {
+      "message": "Lihat detil"
+   },
+   "topBarRatingAverage": {
+      "message": "%s dinilai menjadi oke"
+   },
+   "topBarRatingBad": {
+      "message": "%s dinilai menjadi berbahaya"
+   },
+   "topBarRatingGood": {
+      "message": "%s dinilai menjadi aman"
+   },
+   "violence": {
+      "message": "Senjata / Kekerasan"
+   },
+   "vote": {
+      "message": "Memilih"
+   },
+   "voteNegative": {
+      "message": "negatif"
+   },
+   "votePositive": {
+      "message": "positf"
+   },
+   "webrepDisabled": {
+      "message": "WebRep di nonaktifkan"
+   },
+   "weight1": {
+      "message": "(berdasarkan pemilih dalam jumlah sedikit)"
+   },
+   "weight2": {
+      "message": "(berdasarkan pemilih dalam jumlah terbatas)"
+   },
+   "weight3": {
+      "message": "(berdasarkan pemilih jumlah banyak)"
+   },
+   "whatTypeContent": {
+      "message": "Apa jenis konten dari situs ini?"
+   }
+}

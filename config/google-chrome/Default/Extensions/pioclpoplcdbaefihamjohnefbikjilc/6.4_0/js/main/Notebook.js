@@ -1,0 +1,2 @@
+/*! Copyright 2009-2015 Evernote Corporation. All rights reserved. */
+function Notebook(a){"use strict";this.guid=null,this.name=null,this.updateSequenceNum=null,this.defaultNotebook=null,this.serviceCreated=null,this.serviceUpdated=null,this.publishing=null,this.published=null,this.stack=null,this.sharedNotebookIds=null,Object.preventExtensions(this);for(var b in a)"undefined"!=typeof this[b]&&(this[b]=a[b])}Object.preventExtensions(Notebook);

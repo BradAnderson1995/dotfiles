@@ -1,0 +1,33 @@
+
+
+-------session starts-------
+
+[5-22 22:32:26.363] INFO: progress update for genres: 1
+[5-22 22:32:26.439] INFO: MediaGallery: name=/home/brad/Music, galleryId=1, isMediaDevice=false, deviceId=undefined
+[5-22 22:32:26.441] INFO: MediaGallery: name=/home/brad/Pictures, galleryId=2, isMediaDevice=false, deviceId=undefined
+[5-22 22:32:26.441] INFO: MediaGallery: name=/home/brad/Videos, galleryId=3, isMediaDevice=false, deviceId=undefined
+[5-22 22:32:26.444] INFO: Starts a quick scan on /home/brad/Music
+[5-22 22:32:26.445] INFO: Iterating over dir / from source /home/brad/Music
+[5-22 22:32:26.445] INFO: Starts a quick scan on /home/brad/Pictures
+[5-22 22:32:26.446] INFO: Iterating over dir / from source /home/brad/Pictures
+[5-22 22:32:26.446] INFO: Starts a quick scan on /home/brad/Videos
+[5-22 22:32:26.446] INFO: Iterating over dir / from source /home/brad/Videos
+[5-22 22:32:26.452] INFO: /home/brad/Music contains music file
+[5-22 22:32:26.453] INFO: /home/brad/Pictures does not contain music file
+[5-22 22:32:26.454] INFO: /home/brad/Videos does not contain music file
+[5-22 22:32:26.482] INFO: Got the drag_and_drop directory
+[5-22 22:32:26.540] INFO: lsVolume=null
+[5-22 22:32:26.540] INFO: lsUserAddedMusicSourceIds=null
+[5-22 22:32:26.541] INFO: lsLastTrackFailureLoggingTime=null
+[5-22 22:32:26.541] INFO: lsUserSelectedDownloadDirId=null
+[5-22 22:32:26.547] INFO: lsDefaultDownloadLocationId=null
+[5-22 22:32:26.548] INFO: Setting is already: lsAlwaysUseDefaultDownloadLocation = false
+[5-22 22:32:26.548] INFO: Setting is already: lsDefaultDownloadLocationId = null
+[5-22 22:32:27.890] INFO: lsAppActivated=null
+[5-22 22:32:27.891] INFO: lsDragAndDropActivated=null
+[5-22 22:32:27.892] INFO: Nacl version: 1.0.188.1050
+[5-22 22:32:27.907] INFO: lsAppActivated=null
+[5-22 22:32:27.922] INFO: Fetched preferences from the server.
+[5-22 22:32:27.954] INFO: Fetched user settings from server.
+[5-22 22:32:27.974] INFO: tylium:i ready
+[5-22 22:32:54.80] INFO: App suspended.

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src='/forge/app_config.js'></script><script src='/forge/all.js'></script>
+    <style type="text/css">
+    *{
+      margin:  0;
+    }
+    body{
+      background-color: #f4f4f4;
+      font-family: 'Helvetica';
+      overflow: hidden;
+    }
+
+    .wrapper {
+      width: 320px;
+      height: 190px;
+    }
+
+    .header {
+      background-color: white;
+      height: 45px;
+    }
+
+    .header img {
+      height: 30px;
+      padding-left: 30px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    .black-banner {
+      background-color: #3E4248;
+      color: white;
+      height: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .black-banner img{
+      position: absolute;
+      height: 30px;
+      top: 60px;
+      left: 30px;
+    }
+
+    .banner-message{
+      margin-left: 85px;
+      padding-top: 10px;
+    }
+
+    .banner-message h5{
+      font-weight: 300;
+      font-size: 13px;
+      margin-top: 13px;
+    }
+
+    .banner-message h2 {
+      padding-top: 8px;
+      font-weight: 400;
+      font-size: 10px;
+    }
+
+    .main-content {
+      background-color: #f7f9f9;
+      height: 120px;
+    }
+
+    .enabled-icon{
+      position: relative;
+      left: 130px;
+      width: 80px;
+      top: 15px;
+    }
+
+    .enabled-icon img {
+      height: 48px;
+      width: 48px;
+      position:absolute;
+      top:0px;
+      left:0px;
+    }
+
+    .on-message{
+      position:relative;
+      left: 15px;
+      top: 55px;
+      font-weight: 700;
+    }
+
+    .contact {
+      position:relative;
+      top: 10px;
+      margin-top:10px;
+      width: 100%;
+      text-align:center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .centered {
+      width: 100%;
+
+    }
+    .orange-btn {
+      background-color: #F1863C;
+      cursor: pointer;
+      width: 100px;
+      height: 30px;
+      text-align:center;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      color: white;
+      font-size: 12px;
+      line-height:30px;
+      font-weight: 600;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img src="https://storage.googleapis.com/honey-extension/images/assets/honeyLogo_grey_45px.png"/>
+      </div>
+
+      <div class="content">
+
+        <div class="black-banner">
+          <img class="disabled-icon" src="https://storage.googleapis.com/honey-extension/images/icons/honey-icon-128d.png">
+          <div class="banner-message">
+            <h5>HONEY IS CURRENTLY <b>INACTIVE</b></h5>
+          </div>
+        </div>
+
+        <div class="main-content">
+<!--           <div class="enabled-icon">
+            <img class="enabled-icon" src="https://storage.googleapis.com/honey-extension/images/icons/honey-icon-128.png">
+            <div class="on-message">ON</div>
+          </div> -->
+
+          <div class='contact'>
+            <div class='contact-link'
+            style="color: #777777;"> WANT US TO ADD SUPPORT FOR THIS STORE? </div>
+              <div class="orange-btn contact" onclick="window.open('http://www.joinhoney.com/contact/');">LET US KNOW</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

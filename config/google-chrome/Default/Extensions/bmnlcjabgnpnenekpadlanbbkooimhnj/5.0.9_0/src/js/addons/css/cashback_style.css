@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  background-color:#FFF;
+  font-family: 'avenir','Open Sans',sans-serif;
+  overflow: hidden;
+  width:100%;
+  height:100%;
+}
+
+.border {
+  display:inline-block;
+  width:100%;
+}
+
+
+#activate-btn {
+  color: #FF7400;
+  cursor: pointer;
+}
+
+.honey-logo{ 
+  height: 27px;
+  padding-left: 5px;
+}
+
+
+.content {
+  position:fixed;
+  display:table;
+  position:absolute;
+/*  background-color: #ECF0F5;*/
+  height: 100%;
+  width: 100%;
+}
+
+.centered-wrapper {
+  display:table;
+}
+
+.centered-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hoverable:hover {
+  background-color: #F0AE48;
+  color: #FFF;
+}
+
+.cash-notification {
+  width: 300px;
+  height: 100%;
+}
+
+.time-message {
+  font-weight: 400;
+}
+
+
+.cashback-content {
+  margin: 3px;
+  width: 380px;
+  height: 33px;
+  background-color: #FFF;
+  box-shadow: 0px 1px 3px 1px rgb(181, 181, 181);
+}
+
+.cashback-offer{
+  width: 250px;
+  padding-left: 20px;
+}
+
+.cashback-offer .cashback-message {
+  font-weight: 500;
+  font-size: 11pt;
+}
+
+
+.claim-offer {
+  border-left: 1.5px solid rgb(215, 215, 215);
+  width: 115px;
+  text-align:center;
+  color: #F0AE48;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.claim-offer:hover {
+  color: #FFF;
+}
+
+
+.time-remaining {
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.time-message .remaining-message {
+  padding-left: 10px;
+}
+
+.close-btn {
+  color: #F0AE48;
+  cursor: pointer;
+  padding-right: 18px;
+  padding-left: 18px;
+  border-left: 1.5px solid rgb(215, 215, 215);
+}
+
+.cashback-apply-content {
+  display: none;
+}
+
+.cashback-apply-content .honey-logo{
+  display: inline-block;
+}
+
+.cashback-apply-content .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  border: none;
+  color: #000;
+}
+
+.cashback-apply-content .automatic-savings-title {
+  position:relative;
+  bottom: 11px;
+  color: #969A98;
+  font-weight: 700;
+  font-size: 13pt;
+}
+
+/* coupon code page view */
+.cashback-coupon-page-content {
+  width: 420px;
+  height: 140px;
+  background-color: #fff;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.honey-apply-message {
+  margin-top: -30px;
+}
+
+.cashback-apply-content .apply-offer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cashback-apply-content .instant-cash-offer {
+  color: #41BAFA;
+}
+
+.cashback-apply-content .cash-value {
+  color: #41BAFA;
+}
+
+.go-btn {
+  line-height: 1.92857143;
+}
+
+.orange-btn {
+  margin-bottom: 0;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 3px 12px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.42857143;
+  border-radius: 2px;     
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #E79126;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  padding-top:5px;
+}
+
+.orange-btn:hover {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  background-color: #F3AD01;
+}

@@ -1,0 +1,18 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "css": [ "css/ni.css" ],
+      "js": [ "js/jquery.min.js", "js/jquery.tmpl.min.js", "js/ni.js" ],
+      "matches": [ "http://*.netflix.com/*" ]
+   } ],
+   "description": "See IMDb ratings on all Netflix pages when you mouse over any movie tile",
+   "icons": {
+      "128": "images/icon_128.png",
+      "48": "images/icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDg5VJIE0yAiUUwlrK82X3IhCphgxCVs5AJZB1CbUFzTIHL4GNzIxvIv6whcTBI1xOphmu/IJTstsqYTySYcagbFTysnJWkmjQhukDPCNsyY02/WUupxO5+2McS3OSV1NCB7hNvoi2MjWw6WDMWO0mNX5kZKPSsK+369ssXTlZG6wIDAQAB",
+   "name": "IMDbar on Netflix",
+   "permissions": [ "http://www.imdbapi.com/" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.1.0"
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+<script src='/forge/app_config.js'></script><script src='/forge/all.js'></script>
+    <title>Honey Extension</title>
+    <link rel="stylesheet" href="../css/chrome-bootstrap.css">
+  </head>
+  <body class="chrome-bootstrap">
+    <div class="frame">
+      <div class="navigation">
+        <h1><a href="#">Honey Extension</a></h1>
+        <ul class="menu" style="margin-top: 4em;">
+          <li class="selected">
+            <a href="#options">Options</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="mainview view">
+        <div id="options" class="selected">
+          <header>
+            <h1>Options</h1>
+
+
+          </header>
+        
+          <div class="content"> 
+          
+<!--             <section>
+              <h3>Volume</h3>
+              <div class="checkbox">
+                <label>
+                  <input id="volume" type="range" min="0" max="1" step="0.10">
+                </label>
+              </div>
+            </section>
+            
+            <section>
+              <h3>Music</h3>
+              <div class="checkbox">
+                <label>
+                  <input id="animal-forrest" name="music-choice" type="radio">
+                  <span>Animal Forrest + Animal Crossing</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input id="wild-world" name="music-choice" type="radio">
+                  <span>Wild World + City Folk</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input id="new-leaf" name="music-choice" type="radio">
+                  <span>New Leaf</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input id="new-leaf-snowing" name="music-choice" type="radio">
+                  <span>New Leaf (Snowing)</span>
+                </label>
+              </div>
+            </section> -->
+            
+            <section>
+              <h3>Honey Settings</h3>
+
+              <div class="privacy-text">
+              Honey optionally collects some shopping related information that we send back to our servers. We use this data to give you a better shopping experience. And by better we mean: save you more money. For more details, see our <a href="http://www.joinhoney.com/privacy">Privacy Policy</a>. You can opt-out of sending us this data at any time.
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input id="page-view-track" type="checkbox" checked="true">
+                  <span><b>Exclusive Discount Offers</b>: In addition to giving you all the best publicly available offers and coupon codes, Honey also negotiates with stores to get you additional exclusive discount offers based on the stores you shop at.</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input id="prod-view-track" type="checkbox" checked="true">
+                  <span><b>Community Hero</b>: Contribute data about products back to the Honey community. This data will be used to build better shopping tools and features for you and the rest of the Honey community.</span>
+                </label>
+              </div>
+            </section>
+            
+            <header>
+              <h1 style="padding: 0; margin: 0;"></h1>
+              <div class="controls">
+                <div class="spacer"></div>
+                <button id="save">Save</button>
+              </div>
+            </header>
+            
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+    <script src="options.js">
+
+    </script>
+  
+</body></html>

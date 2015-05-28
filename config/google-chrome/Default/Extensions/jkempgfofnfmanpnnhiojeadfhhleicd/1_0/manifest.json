@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://adamatomic.com/canabalt/mega/"
+      },
+      "urls": [ "http://adamatomic.com/canabalt/mega/" ]
+   },
+   "description": "Use your Parkour skills to outrun the destruction of your city with just one button!",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMcYdMqpkXF8iGv5FVL+wvj713nW7eslfIQXCxAZ4kRBkRcelms6m/hnpRxNf5Am1xCyKAwVL7rJSg4Lc/wNKsqBb6kez1vQCEklfTGZBLRbAupvwoHtp8X1ikPHQjSToPtnLf/L8irmoNsEC0W+1QZCfgMAoZ5r8NCLOqVL8PIQIDAQAB",
+   "name": "Canabalt - HD Version",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1"
+}
