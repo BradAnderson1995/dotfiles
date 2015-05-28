@@ -17,7 +17,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'jlanzarotta/bufexplorer'
-Bundle 'msanders/snipmate.vim'
+"Bundle 'msanders/snipmate.vim'
+Bundle 'rust-lang/rust.vim'
+Bundle 'phildawes/racer'
+Bundle 'ervandew/supertab'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -27,6 +30,8 @@ Bundle 'taglist.vim'
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 filetype plugin indent on
+" Control-X Control-O to open autocomplete box
+set omnifunc=syntaxcomplete#Complete
 
 " Plugins
 " FuzzyFinder
@@ -56,6 +61,7 @@ filetype plugin indent on
 noremap <space> :
 inoremap ,, <ESC>  
 cnoremap ,, <ESC><ESC> 
+" imap ,c <C-X><C-O>
 let mapleader=","
 map <leader>w :w<CR>
 map <leader>d :NERDTreeToggle<CR>
@@ -63,7 +69,10 @@ map <leader>fc :FufFileWithCurrentBufferDir<CR>
 map <leader>fb :FufBuffer<CR>
 map <leader>ft :FufTag<CR>
 map <leader>t :TlistToggle<CR>
-map <leader>v :e $MYVIRC<CR>
+map <leader>v :e $MYVIMRC<CR>
+
+" SuperTab omnicomplete movement
+let g:SuperTabDefaultCompletionType = "context"
 
 " Update vimrc
 map <leader>rr :source ~/.vimrc<CR>
@@ -95,6 +104,14 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
+ 
+" Leave hidden buffers open
+set hidden
+
+" Rust racer
+let g:racer_cmd = "~/dotfiles/racer/target/release/racer"
+" Must install Rust source to this location first
+let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 
 set t_Co=256 " Run in 256-color mode
 colorscheme desert
@@ -102,9 +119,6 @@ set number " Show line numbers
 
 " Allow backspacing over everything
 set backspace=indent,eol,start
-
-" Leave hidden buffers open
-set hidden
 
 " Keep longer history
 set history=700
@@ -116,7 +130,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-" aintain context around cursor
+" Maintain context around cursor
 set scrolloff=7
 
 " Wildmode configuration
@@ -132,7 +146,7 @@ set ruler
 " Show matching brackets
 set showmatch
 
-" ove between windows
+" Move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -144,7 +158,7 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 " Remember info about open buffers on close
-" set viminfo=%
+ " set viminfo=%M
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()

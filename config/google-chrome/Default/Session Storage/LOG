@@ -1,3 +1,19 @@
-2015/05/28-14:39:05.121 12505 Reusing MANIFEST /home/brad/.config/google-chrome/Default/Session Storage/MANIFEST-000001
-2015/05/28-14:39:05.121 12505 Recovering log #68
-2015/05/28-14:39:05.122 12505 Reusing old log /home/brad/.config/google-chrome/Default/Session Storage/000068.log 
+2015/05/28-15:48:22.098 16521 Reusing MANIFEST /home/brad/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2015/05/28-15:48:22.098 16521 Recovering log #68
+2015/05/28-15:48:22.100 16521 Reusing old log /home/brad/.config/google-chrome/Default/Session Storage/000068.log 
+2015/05/28-17:09:58.850 19306 Compacting 2@0 + 1@1 files
+2015/05/28-17:09:58.928 19306 Generated table #70: 81 keys, 326765 bytes
+2015/05/28-17:09:58.928 19306 Compacted 2@0 + 1@1 files => 326765 bytes
+2015/05/28-17:09:58.970 19306 compacted to: files[ 0 1 0 0 0 0 0 ]
+2015/05/28-17:09:58.970 19306 Delete type=2 #62
+2015/05/28-17:09:58.971 19306 Delete type=2 #67
+2015/05/28-17:09:58.971 19306 Delete type=2 #64
+2015/05/28-17:58:23.476 19306 Level-0 table #72: started
+2015/05/28-17:58:23.560 19306 Level-0 table #72: 1322274 bytes OK
+2015/05/28-17:58:23.621 19306 Delete type=0 #68
+2015/05/28-18:25:12.680 19306 Compacting 1@0 + 1@1 files
+2015/05/28-18:25:12.901 19306 Generated table #73: 276 keys, 1198583 bytes
+2015/05/28-18:25:12.901 19306 Compacted 1@0 + 1@1 files => 1198583 bytes
+2015/05/28-18:25:13.086 19306 compacted to: files[ 0 1 0 0 0 0 0 ]
+2015/05/28-18:25:13.086 19306 Delete type=2 #72
+2015/05/28-18:25:13.086 19306 Delete type=2 #70

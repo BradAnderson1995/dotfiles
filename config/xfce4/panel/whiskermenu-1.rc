@@ -1,5 +1,5 @@
 favorites=firefox.desktop,thunderbird.desktop,hexchat.desktop,mintInstall.desktop,Thunar.desktop,gedit.desktop,gcalctool.desktop,xfce4-terminal.desktop
-recent=dropbox.desktop,gnome-disks.desktop,mintdrivers.desktop
+recent=mintdrivers.desktop,dropbox.desktop,gnome-disks.desktop
 button-title=Applications Menu
 button-icon=/usr/share/linuxmint/logo.png
 button-single-row=false
