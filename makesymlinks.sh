@@ -57,6 +57,11 @@ else
 fi
 }
 
+# This doesn't work
+if [[ $platform == 'Linux' ]]; then
+    fonts/install.sh
+fi
+
 install_terminator () {
 # Test to see if terminator is installed. If it is:
 if [ -f /usr/bin/terminator ]; then

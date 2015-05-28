@@ -1,5 +1,5 @@
 {
-   "checksum": "5e0f30840c5bd46918958a0459f28b4e",
+   "checksum": "25c73f8eb58dea915e26ef0a84f8306c",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -232,9 +232,20 @@
             "name": "Class Schedule Planner | MyEdu",
             "type": "url",
             "url": "https://www.myedu.com/schedule-planner/"
+         }, {
+            "date_added": "13076809896079914",
+            "id": "433",
+            "meta_info": {
+               "stars.id": "ssc_1b0efb5df35d89e4",
+               "stars.isSynced": "true"
+            },
+            "name": "Bookmarks",
+            "sync_transaction_version": "11",
+            "type": "url",
+            "url": "chrome://bookmarks/"
          } ],
          "date_added": "13074039140455647",
-         "date_modified": "13076798535813196",
+         "date_modified": "13076809896079914",
          "id": "1",
          "name": "Bookmarks bar",
          "type": "folder"
@@ -5155,7 +5166,7 @@
          "name": "Other bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "10",
+      "sync_transaction_version": "11",
       "synced": {
          "children": [ {
             "date_added": "13037916674991423",

@@ -1,5 +1,5 @@
 favorites=firefox.desktop,thunderbird.desktop,hexchat.desktop,mintInstall.desktop,Thunar.desktop,gedit.desktop,gcalctool.desktop,xfce4-terminal.desktop
-recent=xfce-mouse-settings.desktop,exo-preferred-applications.desktop,thunar-volman-settings.desktop,Thunar.desktop,xfce-ui-settings.desktop,panel-preferences.desktop,menulibre-new-launcher.desktop,Foxit-Reader.desktop,menulibre.desktop,xfce-wm-settings.desktop
+recent=dropbox.desktop,gnome-disks.desktop,mintdrivers.desktop
 button-title=Applications Menu
 button-icon=/usr/share/linuxmint/logo.png
 button-single-row=false
