@@ -43,6 +43,7 @@ set omnifunc=syntaxcomplete#Complete
 " leader-bs - Open horizontal split
 " leader-bv - Open vertical split
 " t or Shift-Enter - Open in new tab
+"   switch between open tabs with gt and gT
 "
 " Snippets
 " type keywords, press tab, get shit done

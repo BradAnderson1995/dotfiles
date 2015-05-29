@@ -8,6 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
+platform=$(uname)
 files="bashrc vimrc vim config zshrc oh-my-zsh private scrotwm.conf Xresources cinnamon gimp-2.8 mednafen PyCharm40 themes gitconfig xmodmap pam_environment"
 # list of files/folders to symlink in homedir
 
@@ -30,8 +31,6 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
-
-platform=$(uname);
 
 install_rust_src () {
 if [[ $platform == 'Linux' ]]; then
