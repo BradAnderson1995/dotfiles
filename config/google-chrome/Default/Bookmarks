@@ -1,5 +1,5 @@
 {
-   "checksum": "de776c791842186558b58f029f132164",
+   "checksum": "e761befcf3997fd17d3022ac879acaf0",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -2600,9 +2600,80 @@
                "sync_transaction_version": "7",
                "type": "url",
                "url": "http://libgdx.badlogicgames.com/downloads/game-jam-survival-guide-compressed.pdf"
+            }, {
+               "children": [ {
+                  "date_added": "13077338077048000",
+                  "id": "439",
+                  "meta_info": {
+                     "stars.id": "c_glijia8yiicc",
+                     "stars.imageData": "Cg5YYWpUNmREREhvSkFBTRIrCiNodHRwczovL2dpdGh1Yi5jb20vd2luZG93cy10aWxlLnBuZxCABBiABBpjCltodHRwOi8vdDEuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1NPdHh2dzNwelcxTFlWWVpfMEREQVlEa0JicnByOTdOQ2R6aW91Skp0ZGRPaDJXdm12EOEBGOEBIhAIARDhARjhAUIGEgSAAgD/",
+                     "stars.isSynced": "true",
+                     "stars.note": "",
+                     "stars.pageData": "Ei5ydXN0IC0gQSBzYWZlLCBjb25jdXJyZW50LCBwcmFjdGljYWwgbGFuZ3VhZ2UuIg5YTThCOGoybld4QTdpTQ==",
+                     "stars.type": "2"
+                  },
+                  "name": "rust-lang/rust · GitHub",
+                  "sync_transaction_version": "30",
+                  "type": "url",
+                  "url": "https://github.com/rust-lang/rust"
+               }, {
+                  "date_added": "13077338108373691",
+                  "id": "441",
+                  "meta_info": {
+                     "stars.id": "c_3u9yia8yj6ih",
+                     "stars.isSynced": "true",
+                     "stars.note": "",
+                     "stars.pageData": "EtQGV2VsY29tZSEgVGhpcyBib29rIHdpbGwgdGVhY2ggeW91IGFib3V0IHRoZSBSdXN0IFByb2dyYW1taW5nIExhbmd1YWdlLiBSdXN0IGlzIGEgc3lzdGVtcyBwcm9ncmFtbWluZyBsYW5ndWFnZSBmb2N1c2VkIG9uIHRocmVlIGdvYWxzOiBzYWZldHksIHNwZWVkLCBhbmQgY29uY3VycmVuY3kuIEl0IG1haW50YWlucyB0aGVzZSBnb2FscyB3aXRob3V0IGhhdmluZyBhIGdhcmJhZ2UgY29sbGVjdG9yLCBtYWtpbmcgaXQgYSB1c2VmdWwgbGFuZ3VhZ2UgZm9yIGEgbnVtYmVyIG9mIHVzZSBjYXNlcyBvdGhlciBsYW5ndWFnZXMgYXJlbuKAmXQgZ29vZCBhdDogZW1iZWRkaW5nIGluIG90aGVyIGxhbmd1YWdlcywgcHJvZ3JhbXMgd2l0aCBzcGVjaWZpYyBzcGFjZSBhbmQgdGltZSByZXF1aXJlbWVudHMsIGFuZCB3cml0aW5nIGxvdy1sZXZlbCBjb2RlLCBsaWtlIGRldmljZSBkcml2ZXJzIGFuZCBvcGVyYXRpbmcgc3lzdGVtcy4gSXQgaW1wcm92ZXMgb24gY3VycmVudCBsYW5ndWFnZXMgdGFyZ2V0aW5nIHRoaXMgc3BhY2UgYnkgaGF2aW5nIGEgbnVtYmVyIG9mIGNvbXBpbGUtdGltZSBzYWZldHkgY2hlY2tzIHRoYXQgcHJvZHVjZSBubyBydW50aW1lIG92ZXJoZWFkLCB3aGlsZSBlbGltaW5hdGluZyBhbGwgZGF0YSByYWNlcy4gUnVzdCBhbHNvIGFpbXMgdG8gYWNoaWV2ZSDigJh6ZXJvLWNvc3QgYWJzdHJhY3Rpb25z4oCZIGV2ZW4gdGhvdWdoIHNvbWUgb2YgdGhlc2UgYWJzdHJhY3Rpb25zIGZlZWwgbGlrZSB0aG9zZSBvZiBhIGhpZ2gtbGV2ZWwgbGFuZ3VhZ2UuIEV2ZW4gdGhlbiwgUnVzdCBzdGlsbCBhbGxvd3MgcHJlY2lzZSBjb250cm9sIGxpa2UgYSBsb3ctbGV2ZWwgbGFuZ3VhZ2Ugd291bGQu",
+                     "stars.type": "2"
+                  },
+                  "name": "The Rust Programming Language",
+                  "sync_transaction_version": "31",
+                  "type": "url",
+                  "url": "http://doc.rust-lang.org/book/"
+               }, {
+                  "date_added": "13077338244877000",
+                  "id": "442",
+                  "meta_info": {
+                     "stars.id": "c_9sf7ia8ym3ui",
+                     "stars.isSynced": "true",
+                     "stars.note": "",
+                     "stars.pageData": "Em5UaGlzIGRvY3VtZW50IGlzIHRoZSBwcmltYXJ5IHJlZmVyZW5jZSBmb3IgdGhlIFJ1c3QgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UuIEl0IHByb3ZpZGVzIHRocmVlIGtpbmRzIG9mIG1hdGVyaWFsOiIOcGg5WFRxX3ppLVhWUk0=",
+                     "stars.type": "2"
+                  },
+                  "name": "The Rust Reference",
+                  "sync_transaction_version": "41",
+                  "type": "url",
+                  "url": "https://doc.rust-lang.org/stable/reference.html"
+               }, {
+                  "date_added": "13077338271484000",
+                  "id": "443",
+                  "meta_info": {
+                     "stars.id": "c_bjh5ia8ymodd",
+                     "stars.isSynced": "true",
+                     "stars.note": "",
+                     "stars.pageData": "EnRUaGlzIGRvY3VtZW50IGNvbGxlY3RzIHRoZSBlbWVyZ2luZyBwcmluY2lwbGVzLCBjb252ZW50aW9ucywgYWJzdHJhY3Rpb25zLCBhbmQgYmVzdCBwcmFjdGljZXMgZm9yIHdyaXRpbmcgUnVzdCBjb2RlLiIOS3hwNEVDbFNRRTg2Rk0=",
+                     "stars.type": "2"
+                  },
+                  "name": "Rust Guidelines [working title]",
+                  "sync_transaction_version": "41",
+                  "type": "url",
+                  "url": "http://aturon.github.io/"
+               } ],
+               "date_added": "13077338092767713",
+               "date_modified": "13077338438293790",
+               "id": "440",
+               "meta_info": {
+                  "stars.description": "",
+                  "stars.id": "ssf_bbbeec7472e9a76d",
+                  "stars.isPublic": "false",
+                  "stars.isSynced": "true"
+               },
+               "name": "Rust",
+               "sync_transaction_version": "28",
+               "type": "folder"
             } ],
             "date_added": "13074039178813040",
-            "date_modified": "13077315548241676",
+            "date_modified": "13077338092772389",
             "id": "9",
             "meta_info": {
                "stars.id": "ssf_b24f5739f0120cfc",
@@ -5183,12 +5254,12 @@
             "type": "folder"
          } ],
          "date_added": "13074039140455658",
-         "date_modified": "13073430497050526",
+         "date_modified": "13077338271484611",
          "id": "2",
          "name": "Other bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "12",
+      "sync_transaction_version": "41",
       "synced": {
          "children": [ {
             "date_added": "13037916674991423",

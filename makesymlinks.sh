@@ -31,6 +31,18 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+platform=$(uname);
+
+install_rust_src () {
+if [[ $platform == 'Linux' ]]; then
+    if [[ ! -d /usr/local/src/rust/ ]]; then 
+        git clone https://github.com/rust-lang/rust.git /usr/local/src
+    else
+        echo "Rust source is installed"
+    fi
+fi
+}
+
 install_zsh () {
 # Test to see if zshell is installed.  If it is:
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
@@ -57,7 +69,6 @@ else
 fi
 }
 
-# This doesn't work
 if [[ $platform == 'Linux' ]]; then
     fonts/install.sh
 fi
@@ -75,4 +86,5 @@ fi
 }
 
 install_zsh
+install_rust_src
 install_terminator
