@@ -36,7 +36,7 @@ platform=$(uname);
 install_rust_src () {
 if [[ $platform == 'Linux' ]]; then
     if [[ ! -d /usr/local/src/rust/ ]]; then 
-        git clone https://github.com/rust-lang/rust.git /usr/local/src
+        sudo git clone https://github.com/rust-lang/rust.git /usr/local/src
     else
         echo "Rust source is installed"
     fi
