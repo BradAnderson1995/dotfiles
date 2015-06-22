@@ -32,6 +32,15 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+install_tools () {
+    yes | sudo apt-get install terminator
+    yes | sudo apt-get install tree
+    yes | sudo apt-get install vim
+    yes | sudo apt-get install tmux
+    yes | sudo apt-get install build-essential
+    yes | sudo apt-get install ctags
+}
+
 install_rust_src () {
 if [[ $platform == 'Linux' ]]; then
     if [[ ! -d /usr/local/src/rust/ ]]; then 
@@ -58,7 +67,7 @@ else
     platform=$(uname);
     # If the platform is Linux, try an apt-get to install zsh and then recurse
     if [[ $platform == 'Linux' ]]; then
-        sudo apt-get install zsh
+        yes | sudo apt-get install zsh
         install_zsh
     # If the platform is OS X, tell the user to install zsh :)
     elif [[ $platform == 'Darwin' ]]; then
@@ -69,7 +78,13 @@ fi
 }
 
 if [[ $platform == 'Linux' ]]; then
-    fonts/install.sh
+    echo -n  " Would you like to install powerline fonts? (y/n)"
+    read response
+    if [ $response == y ]; then
+        git clone http://github.com/powerline/fonts.git
+        fonts/install.sh
+        rm -r -f fonts
+    fi
 fi
 
 install_terminator () {
@@ -84,6 +99,11 @@ else
 fi
 }
 
-install_zsh
-install_rust_src
-install_terminator
+echo -n "Would you like to install tools? (y/n)"
+read response
+if [ $response == y ]; then
+    install_tools
+    install_zsh
+    install_rust_src
+    install_terminator
+fi

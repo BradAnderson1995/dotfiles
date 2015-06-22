@@ -1,3 +1,8 @@
 oh-my-zsh
 */*.log*
 */*/*/*.log*
+vim/bundle
+PyCharm40/system/python_stubs
+config-chromium
+config/google-chrome
+config/pulse

@@ -1,12 +1,6 @@
-set nocompatible " Turn off vim compatibility mode
 filetype off
 
-if empty(glob("~/.vim/bundle/vundle"))
-    !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-endif
-
-set rtp+=~/.vim/bundle/vundle
-call vundle#begin()
+set rtp+=~/vim/bundle/vundle
 
 " let Vundle manage Vundle
 " required!
@@ -17,23 +11,16 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'jlanzarotta/bufexplorer'
-"Bundle 'msanders/snipmate.vim'
-Bundle 'rust-lang/rust.vim'
-Bundle 'phildawes/racer'
-Bundle 'ervandew/supertab'
+Bundle 'msanders/snipmate.vim'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'taglist.vim'
-
-call vundle#end()
+" Bundle 'taglist.vim'
 
 " Run in python using F9
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 filetype plugin indent on
-" Control-X Control-O to open autocomplete box
-set omnifunc=syntaxcomplete#Complete
 
 " Plugins
 " FuzzyFinder
@@ -45,7 +32,6 @@ set omnifunc=syntaxcomplete#Complete
 " leader-bs - Open horizontal split
 " leader-bv - Open vertical split
 " t or Shift-Enter - Open in new tab
-"   switch between open tabs with gt and gT
 "
 " Snippets
 " type keywords, press tab, get shit done
@@ -64,21 +50,17 @@ set omnifunc=syntaxcomplete#Complete
 noremap <space> :
 inoremap ,, <ESC>  
 cnoremap ,, <ESC><ESC> 
-" imap ,c <C-X><C-O>
 let mapleader=","
 map <leader>w :w<CR>
 map <leader>d :NERDTreeToggle<CR>
 map <leader>fc :FufFileWithCurrentBufferDir<CR>
 map <leader>fb :FufBuffer<CR>
 map <leader>ft :FufTag<CR>
-map <leader>t :TlistToggle<CR>
-map <leader>v :e $MYVIMRC<CR>
-
-" SuperTab omnicomplete movement
-let g:SuperTabDefaultCompletionType = "context"
+" map <leader>t :TlistToggle<CR>
+map <leader>v :e ~/_vsvimrc<CR>
 
 " Update vimrc
-map <leader>rr :source ~/.vimrc<CR>
+map <leader>rr :source ~/_vimrc<CR>
 
 " Documentation
 let g:pymode_doc = 1
@@ -107,16 +89,7 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
- 
-" Leave hidden buffers open
-set hidden
 
-" Rust racer
-let g:racer_cmd = "~/dotfiles/racer/target/release/racer"
-" Must install Rust source to this location first
-let $RUST_SRC_PATH="/usr/local/src/rust/src/"
-
-set t_Co=256 " Run in 256-color mode
 colorscheme desert
 set number " Show line numbers
 
@@ -136,18 +109,9 @@ set smartcase
 " Maintain context around cursor
 set scrolloff=7
 
-" Wildmode configuration
-set wildmode=longest,list
-set wildmenu
 
 " Configure tab behavior
-set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
-
-" Show current position
-set ruler
-
-" Show matching brackets
-set showmatch
+set tabstop=8 softtabstop=4 expandtab shiftwidth=4
 
 " Move between windows
 map <C-j> <C-W>j
@@ -161,13 +125,7 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 " Remember info about open buffers on close
- " set viminfo=%M
+" set viminfo=%
 
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
-func! DeleteTrailingWS()
-    exe "normal mz"
-    %s/\s\+$//ge
-    exe "normal `z"
-endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
