@@ -3,6 +3,6 @@ oh-my-zsh
 */*/*/*.log*
 vim/bundle
 PyCharm40/system/python_stubs
-config-chromium
+config/chromium
 config/google-chrome
 config/pulse

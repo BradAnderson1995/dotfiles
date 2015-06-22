@@ -32,6 +32,16 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+if [[ $platform == 'Linux' ]]; then
+    echo -n  " Would you like to install powerline fonts? (y/n) "
+    read response
+    if [ $response == y || $response == Y ]; then
+        git clone http://github.com/powerline/fonts.git
+        fonts/install.sh
+        rm -r -f fonts
+    fi
+fi
+
 install_tools () {
     yes | sudo apt-get install terminator
     yes | sudo apt-get install tree
@@ -77,16 +87,6 @@ else
 fi
 }
 
-if [[ $platform == 'Linux' ]]; then
-    echo -n  " Would you like to install powerline fonts? (y/n)"
-    read response
-    if [ $response == y ]; then
-        git clone http://github.com/powerline/fonts.git
-        fonts/install.sh
-        rm -r -f fonts
-    fi
-fi
-
 install_terminator () {
 # Test to see if terminator is installed. If it is:
 if [ -f /usr/bin/terminator ]; then
@@ -99,9 +99,9 @@ else
 fi
 }
 
-echo -n "Would you like to install tools? (y/n)"
+echo -n "Would you like to install tools? (y/n) "
 read response
-if [ $response == y ]; then
+if [ $response == y || $response == Y ]; then
     install_tools
     install_zsh
     install_rust_src

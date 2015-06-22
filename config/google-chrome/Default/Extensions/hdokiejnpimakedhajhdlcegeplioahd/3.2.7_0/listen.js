@@ -1,1 +1,0 @@
-function listen(f,b,d,e,a){null==a&&(a=!0);if("undefined"!=typeof b){b.addEventListener(d,e,a);var c=function(){b.removeEventListener(d,e,a)}}var g=unload(c,f);return function(){"undefined"!=typeof c&&c();g()}}exports.listen=listen;
