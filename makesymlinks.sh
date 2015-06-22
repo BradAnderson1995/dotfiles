@@ -54,7 +54,7 @@ install_tools () {
 install_rust_src () {
 if [[ $platform == 'Linux' ]]; then
     if [[ ! -d /usr/local/src/rust/ ]]; then 
-        sudo git clone https://github.com/rust-lang/rust.git /usr/local/src
+        sudo git clone https://github.com/rust-lang/rust.git /usr/local/src/rust
     else
         echo "Rust source is installed"
     fi
@@ -101,7 +101,7 @@ fi
 
 echo -n "Would you like to install tools? (y/n) "
 read response
-if [ $response == y || $response == Y ]; then
+if [ $response == y ] || [ $response == Y ]; then
     install_tools
     install_zsh
     install_rust_src
