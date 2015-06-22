@@ -2,7 +2,7 @@ oh-my-zsh
 */*.log*
 */*/*/*.log*
 vim/bundle
-PyCharm40/system/python_stubs
+PyCharm40/system
 config/chromium
 config/google-chrome
 config/pulse
