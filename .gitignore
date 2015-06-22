@@ -3,6 +3,7 @@ oh-my-zsh
 */*/*/*.log*
 vim/bundle
 PyCharm40/system
+cinnamon/spices.cache
 config/chromium
 config/google-chrome
 config/pulse
