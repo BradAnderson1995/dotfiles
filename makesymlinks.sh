@@ -51,12 +51,12 @@ done
 
 # Installation functions
 install_tools () {
-    yes | sudo apt-get install terminator
-    yes | sudo apt-get install tree
-    yes | sudo apt-get install vim
-    yes | sudo apt-get install tmux
-    yes | sudo apt-get install build-essential
-    yes | sudo apt-get install ctags
+    sudo apt-get install terminator
+    sudo apt-get install tree
+    sudo apt-get install vim
+    sudo apt-get install tmux
+    sudo apt-get install build-essential
+    sudo apt-get install ctags
 }
 
 install_rust_src () {
@@ -85,7 +85,7 @@ install_zsh () {
         platform=$(uname);
         # If the platform is Linux, try an apt-get to install zsh and then recurse
         if [[ $platform == 'Linux' ]]; then
-            yes | sudo apt-get install zsh
+            sudo apt-get install zsh
             install_zsh
         # If the platform is OS X, tell the user to install zsh :)
         elif [[ $platform == 'Darwin' ]]; then
