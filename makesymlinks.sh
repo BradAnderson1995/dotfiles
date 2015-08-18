@@ -19,7 +19,6 @@ oh-my-zsh
 private 
 scrotwm.conf 
 Xresources 
-cinnamon 
 gimp-2.8 
 mednafen 
 PyCharm40 
@@ -28,6 +27,12 @@ gitconfig
 xmodmap 
 pam_environment"
 # list of files/folders to symlink in homedir
+
+if [ $(program_installed cinnamon) == 1 ]; then
+	files += "cinnamon"
+fi
+#if [ $(program_installed xfce4) == 1 ]; then
+#fi
 
 ##########
 
@@ -51,12 +56,23 @@ done
 
 # Installation functions
 install_tools () {
-    sudo apt-get install terminator
-    sudo apt-get install tree
-    sudo apt-get install vim
-    sudo apt-get install tmux
-    sudo apt-get install build-essential
-    sudo apt-get install ctags
+    if [ $(program_installed apt-get) == 1 ]; then
+        sudo apt-get install terminator
+        sudo apt-get install tree
+        sudo apt-get install vim
+        sudo apt-get install tmux
+        sudo apt-get install build-essential
+        sudo apt-get install ctags
+    elif [ $(program_installed pacman) == 1 ]; then
+        sudo pacman -S terminator
+        sudo pacman -S tree
+        sudo pacman -S vim
+        sudo pacman -S tmux
+        sudo pacman -S build-essential
+        sudo pacman -S ctags
+    else 
+        echo "Cannot install tools, no compatible package manager."
+    fi
 }
 
 install_rust_src () {
@@ -85,8 +101,15 @@ install_zsh () {
         platform=$(uname);
         # If the platform is Linux, try an apt-get to install zsh and then recurse
         if [[ $platform == 'Linux' ]]; then
-            sudo apt-get install zsh
-            install_zsh
+	    if [ $(program_installed apt-get) == 1 ]; then
+                sudo apt-get install zsh
+                install_zsh
+            elif [ $(program_installed pacman) == 1 ]; then
+                sudo pacman -S zsh
+                install_zsh
+            else 
+                echo "Cannot install zsh, no compatible package manager."
+	    fi
         # If the platform is OS X, tell the user to install zsh :)
         elif [[ $platform == 'Darwin' ]]; then
             echo "Please install zsh, then re-run this script!"
@@ -98,9 +121,11 @@ install_zsh () {
 install_terminator () {
     # Test to see if terminator is installed. If it is:
     if [ -f /usr/bin/terminator ]; then
-        # Set default terminal emulator
-        echo "Select your prefered terminal emulator"
-        sudo update-alternatives --config x-terminal-emulator
+        if [ $(program_installed update-alternatives) == 1 ]; then
+            # Set default terminal emulator
+            echo "Select your prefered terminal emulator"
+            sudo update-alternatives --config x-terminal-emulator
+        fi
     else
         echo "Please install terminator, then re-run this script!"
         exit
@@ -151,6 +176,14 @@ prompt_installations() {
             fi
         fi
     fi
+}
+
+function program_installed {
+	local return_=1
+
+	type $1 >/dev/null 2>&1 || { local return_=0; }
+	
+	echo "$return_"
 }
 
 prompt_installations

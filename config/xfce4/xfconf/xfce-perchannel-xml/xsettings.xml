@@ -3,7 +3,7 @@
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
     <property name="ThemeName" type="string" value="Numix"/>
-    <property name="IconThemeName" type="string" value="Mint-X-Red"/>
+    <property name="IconThemeName" type="string" value="gnome"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -33,6 +33,7 @@
     <property name="MenuBarAccel" type="empty"/>
     <property name="CursorThemeName" type="string" value="Adwaita"/>
     <property name="CursorThemeSize" type="empty"/>
+    <property name="DecorationLayout" type="empty"/>
     <property name="IMPreeditStyle" type="empty"/>
     <property name="IMStatusStyle" type="empty"/>
     <property name="IMModule" type="empty"/>
