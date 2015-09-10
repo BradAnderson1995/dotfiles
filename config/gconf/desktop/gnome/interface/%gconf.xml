@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="gtk_theme" mtime="1439869777" type="string">
+		<stringvalue>numix</stringvalue>
+	</entry>
+</gconf>

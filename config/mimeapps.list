@@ -1,0 +1,6 @@
+[Added Associations]
+application/x-7z-compressed=org.gnome.FileRoller.desktop;
+application/x-compressed-tar=org.gnome.FileRoller.desktop;
+application/x-theme=panel-desktop-handler.desktop;
+text/plain=mousepad.desktop;
+application/x-shellscript=xfce4-terminal.desktop;mousepad.desktop;

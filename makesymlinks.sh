@@ -9,12 +9,16 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 platform=$(uname)
+# list of files/folders to symlink in homedir
 files="
 bashrc 
 vimrc 
 vim 
+tmux.conf
+tmuxinator
 config 
 zshrc 
+profile
 oh-my-zsh 
 private 
 scrotwm.conf 
@@ -26,11 +30,48 @@ themes
 gitconfig 
 xmodmap 
 pam_environment"
-# list of files/folders to symlink in homedir
+# list of AUR programs to install on Arch Linux
+AUR="
+google-chrome
+dropbox
+dropbox-cli
+thunar-dropbox
+numix-icon-theme-git
+"
+
+function program_installed {
+	local return_=1
+
+	type $1 >/dev/null 2>&1 || { local return_=0; }
+	
+	echo "$return_"
+}
 
 if [ $(program_installed cinnamon) == 1 ]; then
 	files += "cinnamon"
 fi
+
+# install AUR programs if on Arch
+if [ $(program_installed pacman) == 1 ]; then
+    echo -n "Do you want to install AUR programs? (y/n) "
+    read response
+    if [ $response == y ] || [ $response == Y ]; then
+        echo "Creating ~/builds to hold AUR programs."
+        echo "Installing git if it's not installed."
+        sudo pacman -S git
+        echo "Installing base-devel if it's not installed."
+        sudo pacman -S base-devel
+        mkdir -p ~/builds
+        for program in $AUR; do
+            echo "Git cloning $program to ~/builds/$program ."
+            git clone https://aur.archlinux.org/$program.git ~/builds
+            cd ~/builds/$program
+            makepkg -sri
+            cd $dir
+        done
+    fi
+fi
+
 #if [ $(program_installed xfce4) == 1 ]; then
 #fi
 
@@ -54,6 +95,11 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# create symlink for bin directory
+if [[ ! -d ~/bin ]]; then 
+    ln -s ~/dotfiles/bin ~/bin
+fi
+
 # Installation functions
 install_tools () {
     if [ $(program_installed apt-get) == 1 ]; then
@@ -72,6 +118,10 @@ install_tools () {
         sudo pacman -S ctags
     else 
         echo "Cannot install tools, no compatible package manager."
+    fi
+    if [ $(program_installed ruby) == 1 ]; then
+        gem install tmuxinator
+        gem install guard
     fi
 }
 
@@ -141,6 +191,22 @@ prompt_installations() {
             git clone http://github.com/powerline/fonts.git
             fonts/install.sh
             rm -r -f fonts
+            echo -n "Would you like to install powerline? (y/n) "
+            read response
+            if [ $response == y ] || [ $response == Y ]; then
+                # TODO: Set up installing pip
+                pip install powerline-status
+            fi
+        fi
+
+        echo -n "Would you like switch control with CapsLock? (y/n) "
+        read response
+        if [ $response == y ] || [ $response == Y ]; then
+            if [[ ! -d ~/bin ]]; then 
+                mkdir ~/bin
+            fi
+            cp nocaps.sh ~/bin/nocaps.sh
+            echo "You will have to uncomment the function call in .bashrc."
         fi
 
         echo -n "Default install? (y/n) "
@@ -176,14 +242,6 @@ prompt_installations() {
             fi
         fi
     fi
-}
-
-function program_installed {
-	local return_=1
-
-	type $1 >/dev/null 2>&1 || { local return_=0; }
-	
-	echo "$return_"
 }
 
 prompt_installations

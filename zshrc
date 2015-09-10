@@ -52,6 +52,8 @@ plugins=(git, github, gitflow, tmux)
 #
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export MANPATH="/usr/local/man:$MANPATH"
+source ~/.profile
+
 #
 source $ZSH/oh-my-zsh.sh
 #
@@ -95,3 +97,9 @@ compinit
 # End of lines added by compinstall
 
 DEFAULT_USER=brad
+
+# Powerline plugin
+source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# TMuxinator Completion
+source ~/bin/tmuxinator.zsh

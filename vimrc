@@ -5,6 +5,17 @@ if empty(glob("~/.vim/bundle/vundle"))
     !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 endif
 
+" Powerline
+set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
+" Always display powerline statusline
+set laststatus=2
+" Hide default statusline text
+set noshowmode "
+
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
@@ -73,6 +84,10 @@ map <leader>fb :FufBuffer<CR>
 map <leader>ft :FufTag<CR>
 map <leader>t :TlistToggle<CR>
 map <leader>v :e $MYVIMRC<CR>
+
+" Powerline configuration
+let g:powerline_pycmd = "py"
+let g:powerline_pyeval = "pyeval"
 
 " SuperTab omnicomplete movement
 let g:SuperTabDefaultCompletionType = "context"
