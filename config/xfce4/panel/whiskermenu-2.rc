@@ -1,5 +1,5 @@
 favorites=
-recent=dropbox.desktop,xfce-display-settings.desktop,xfce-settings-manager.desktop,xfce-xfcalendar-settings.desktop,xfce4-settings-editor.desktop,xfce-session-settings.desktop,avahi-discover.desktop,nvidia-settings.desktop,xfce4-mime-settings.desktop,xfce-wm-settings.desktop
+recent=xfce-wm-settings.desktop,xfce-ui-settings.desktop,Thunar.desktop,xfce-display-settings.desktop,xfce-settings-manager.desktop,xfce-xfcalendar-settings.desktop,xfce4-settings-editor.desktop,xfce-session-settings.desktop,avahi-discover.desktop,nvidia-settings.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false

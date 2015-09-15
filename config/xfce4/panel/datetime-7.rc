@@ -1,6 +1,6 @@
-layout=1
+layout=0
 date_font=Bitstream Vera Sans 8
 time_font=Bitstream Vera Sans 8
-date_format=%a, %b %d, %Y
+date_format=%A, %B %d, %Y
 time_format=%l:%M %P
 

@@ -32,11 +32,18 @@ xmodmap
 pam_environment"
 # list of AUR programs to install on Arch Linux
 AUR="
+package-query
+yaourt
+"
+YAOURT="
 google-chrome
 dropbox
 dropbox-cli
 thunar-dropbox
 numix-icon-theme-git
+ttf-hack
+virtualbox-ext-oracle
+gtk-theme-arc-git
 "
 
 function program_installed {
@@ -63,11 +70,18 @@ if [ $(program_installed pacman) == 1 ]; then
         sudo pacman -S base-devel
         mkdir -p ~/builds
         for program in $AUR; do
-            echo "Git cloning $program to ~/builds/$program ."
-            git clone https://aur.archlinux.org/$program.git ~/builds
-            cd ~/builds/$program
-            makepkg -sri
-            cd $dir
+            if [[ ! -d ~/builds/$program ]]; then 
+                echo "Git cloning $program to ~/builds/$program ."
+                git clone https://aur.archlinux.org/$program.git ~/builds/$program
+                cd ~/builds/$program
+                makepkg -sri
+                cd $dir
+            fi
+        done
+        for program in $YAOURT; do
+            if [ $(program_installed $program) == 0 ]; then
+                yaourt -S --force $program
+            fi
         done
     fi
 fi
@@ -103,6 +117,8 @@ fi
 # Installation functions
 install_tools () {
     if [ $(program_installed apt-get) == 1 ]; then
+        sudo apt-get update
+        sudo apt-get install python2-pip
         sudo apt-get install terminator
         sudo apt-get install tree
         sudo apt-get install vim
@@ -110,9 +126,11 @@ install_tools () {
         sudo apt-get install build-essential
         sudo apt-get install ctags
     elif [ $(program_installed pacman) == 1 ]; then
+        sudo pacman -Syu
+        sudo pacman -S python2-pip
         sudo pacman -S terminator
         sudo pacman -S tree
-        sudo pacman -S vim
+        sudo pacman -S gvim
         sudo pacman -S tmux
         sudo pacman -S build-essential
         sudo pacman -S ctags
@@ -168,6 +186,18 @@ install_zsh () {
     fi
 }
 
+install_powerline_fonts() {
+    git clone http://github.com/powerline/fonts.git
+    fonts/install.sh
+    rm -r -f fonts
+    echo -n "Would you like to install powerline? (y/n) "
+    read response
+    if [ $response == y ] || [ $response == Y ]; then
+        # TODO: Set up installing pip
+        sudo pip2 install powerline-status
+    fi
+}
+
 install_terminator () {
     # Test to see if terminator is installed. If it is:
     if [ -f /usr/bin/terminator ]; then
@@ -185,20 +215,6 @@ install_terminator () {
 prompt_installations() {
     # Guided install of all necessary programs and assets
     if [[ $platform == 'Linux' ]]; then
-        echo -n  " Would you like to install powerline fonts? (y/n) "
-        read response
-        if [ $response == y ] || [ $response == Y ]; then
-            git clone http://github.com/powerline/fonts.git
-            fonts/install.sh
-            rm -r -f fonts
-            echo -n "Would you like to install powerline? (y/n) "
-            read response
-            if [ $response == y ] || [ $response == Y ]; then
-                # TODO: Set up installing pip
-                pip install powerline-status
-            fi
-        fi
-
         echo -n "Would you like switch control with CapsLock? (y/n) "
         read response
         if [ $response == y ] || [ $response == Y ]; then
@@ -213,6 +229,7 @@ prompt_installations() {
         read response
         if [ $response == y ] || [ $response == Y ]; then
             install_tools
+            install_powerline_fonts
             install_zsh
             install_rust_src
             install_terminator
@@ -223,6 +240,12 @@ prompt_installations() {
                 install_tools
             fi
             
+            echo -n  "Would you like to install powerline fonts? (y/n) "
+            read response
+            if [ $response == y ] || [ $response == Y ]; then
+                install_powerline_fonts
+            fi
+
             echo -n "Would you like to install zsh? (y/n) "
             read response
             if [ $response == y ] || [ $response == Y ]; then
