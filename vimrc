@@ -28,10 +28,12 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'jlanzarotta/bufexplorer'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'rdnetto/YCM-Generator'
 "Bundle 'msanders/snipmate.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'phildawes/racer'
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -77,12 +79,17 @@ inoremap ,, <ESC>
 cnoremap ,, <ESC><ESC> 
 " imap ,c <C-X><C-O>
 let mapleader=","
+" Enable hex mode
+map <leader>he :%!xxd<CR>
+" Disable hex mode
+map <leader>hd :%!xxd -r<CR>
 map <leader>w :w<CR>
 map <leader>d :NERDTreeToggle<CR>
 map <leader>fc :FufFileWithCurrentBufferDir<CR>
 map <leader>fb :FufBuffer<CR>
 map <leader>ft :FufTag<CR>
 map <leader>t :TlistToggle<CR>
+map <leader>ygc :YcmGenerateConfig<CR>
 map <leader>v :e $MYVIMRC<CR>
 
 " Powerline configuration

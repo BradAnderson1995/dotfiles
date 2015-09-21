@@ -2,6 +2,8 @@
 export ZSH=$HOME/.oh-my-zsh
 export RUST_SRC_PATH=/usr/local/src/rust/src
 
+# Z
+. / $HOME/dotfiles/z/z.sh
 # Set name of the theme to load.
 # # Look in ~/.oh-my-zsh/themes/
 # # Optionally, if you set this to "random", it'll load a random theme each
@@ -46,7 +48,8 @@ ZSH_THEME="agnoster"
 # # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # # Example format: plugins=(rails git textmate ruby lighthouse)
 # # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, github, gitflow, tmux)
+# # zsh-syntax-highlighting must come last
+plugins=(git github gitflow tmux archlinux zsh-syntax-highlighting)
 #
 # # User configuration
 #
@@ -97,6 +100,12 @@ compinit
 # End of lines added by compinstall
 
 DEFAULT_USER=brad
+
+# Syntax highlighting configuration
+ZSH_HIGHLIGHT_STYLES[path]='bold'
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+ZSH_HIGHLIGHT_STYLES[path_approx]='fg=yellow'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=yellow'
 
 # Powerline plugin
 source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

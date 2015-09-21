@@ -4,3 +4,6 @@ application/x-compressed-tar=org.gnome.FileRoller.desktop;
 application/x-theme=panel-desktop-handler.desktop;
 text/plain=mousepad.desktop;
 application/x-shellscript=xfce4-terminal.desktop;mousepad.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+text/markdown=mousepad.desktop;
+application/postscript=gvim.desktop;

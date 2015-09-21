@@ -134,6 +134,8 @@ install_tools () {
         sudo pacman -S tmux
         sudo pacman -S build-essential
         sudo pacman -S ctags
+        sudo pacman -S clang
+        sudo pacman -S cmake
     else 
         echo "Cannot install tools, no compatible package manager."
     fi
