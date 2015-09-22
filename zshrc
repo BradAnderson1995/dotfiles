@@ -101,6 +101,8 @@ compinit
 
 DEFAULT_USER=brad
 
+alias commands="vim ~/dotfiles/usefulcommands.txt"
+
 # Syntax highlighting configuration
 ZSH_HIGHLIGHT_STYLES[path]='bold'
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
