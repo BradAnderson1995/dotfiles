@@ -114,6 +114,11 @@ if [[ ! -d ~/bin ]]; then
     ln -s ~/dotfiles/bin ~/bin
 fi
 
+# clone Z
+if [[ ! -d $dir/z ]]; then
+    git clone https://github.com/rupa/z $dir/z
+fi
+
 # Installation functions
 install_tools () {
     if [ $(program_installed apt-get) == 1 ]; then
@@ -270,3 +275,8 @@ prompt_installations() {
 }
 
 prompt_installations
+
+# clone zsh-syntax-highlighting
+if [[ ! -d $dir/oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting $dir/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+fi
