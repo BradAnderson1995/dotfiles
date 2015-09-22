@@ -7,3 +7,4 @@ application/x-shellscript=xfce4-terminal.desktop;mousepad.desktop;
 application/zip=org.gnome.FileRoller.desktop;
 text/markdown=mousepad.desktop;
 application/postscript=gvim.desktop;
+application/xml=google-chrome.desktop;

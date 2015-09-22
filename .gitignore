@@ -8,4 +8,7 @@ cinnamon/spices.cache
 config/chromium
 config/google-chrome
 config/pulse
-config/xfce4
+config/xfce4/panel
+config/xfce4/desktop
+config/xfce4/xfconf
+config/thunar

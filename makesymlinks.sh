@@ -11,12 +11,12 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 platform=$(uname)
 # list of files/folders to symlink in homedir
 files="
+config
 bashrc 
 vimrc 
 vim 
 tmux.conf
 tmuxinator
-config 
 zshrc 
 profile
 oh-my-zsh 
@@ -30,6 +30,9 @@ themes
 gitconfig 
 xmodmap 
 pam_environment"
+configs="
+xfce4/terminal
+powerline"
 # list of AUR programs to install on Arch Linux
 AUR="
 package-query
@@ -108,6 +111,12 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# move existing configs to old configs and make symlinks to dotfiles configs
+# cd $dir/.config
+# for config in $configs; do
+#     echo "Moving any existing configs from ~/.config to $olddir/.config
+#     mv ~/.
 
 # create symlink for bin directory
 if [[ ! -d ~/bin ]]; then 
