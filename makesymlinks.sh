@@ -40,6 +40,7 @@ yaourt
 "
 YAOURT="
 google-chrome
+atom-editor
 dropbox
 dropbox-cli
 thunar-dropbox

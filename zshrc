@@ -101,6 +101,7 @@ compinit
 
 DEFAULT_USER=brad
 
+alias sc="vim ~/dotfiles/shortcuts.txt"
 alias commands="vim ~/dotfiles/usefulcommands.txt"
 
 # Syntax highlighting configuration
@@ -108,6 +109,8 @@ ZSH_HIGHLIGHT_STYLES[path]='bold'
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 ZSH_HIGHLIGHT_STYLES[path_approx]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=yellow'
+
+source ~/dotfiles/shortcuts.txt
 
 # Powerline plugin
 source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

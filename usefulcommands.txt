@@ -2,6 +2,7 @@ Tmux/Tmuxinator
     ta='tmux attach -t'
     ts='tmux new-session -s'
     tl='tmux list-sessions'
+    tkw='tmux kill-window'
     tksv='tmux kill-server'
     tkss='tmux kill-session -t'
     
