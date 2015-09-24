@@ -84,9 +84,12 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-repeat'
+Bundle 'sjl/gundo.vim'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'jlanzarotta/bufexplorer'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'Raimondi/delimitMate'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'rdnetto/YCM-Generator'
 Bundle 'rust-lang/rust.vim'
@@ -107,8 +110,9 @@ autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1
 
 " ------ Plugin Configuration ------
 set background=dark
-let g:solarized_termtrans = 1
-colorscheme solarized
+"let g:solarized_termtrans = 1
+colorscheme desert
+" colorscheme solarized
 
 " Indent Guide configuration
 set ts=2 sw=2 et
@@ -239,11 +243,13 @@ map <C-p> "+p
 map <C-p><C-p> "+P
 map <C-x> "+x
 map <C-d><C-d> "+dd
-" Move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+" Move between splits
+nnoremap <C-j> <C-W><C-j>
+nnoremap <C-k> <C-W><C-k>
+nnoremap <C-h> <C-W><C-h>
+nnoremap <C-l> <C-W><C-l>
+set splitbelow
+set splitright
 " map <leader>w :w<CR>
 map <leader>d :NERDTreeToggle<CR>
 "map <leader>fc :FufFileWithCurrentBufferDir<CR>
