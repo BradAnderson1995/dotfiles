@@ -16,7 +16,7 @@ set number " Show line numbers
 runtime macros/matchit.vim
 
 " Set unix line endings
-set fileformat=unix
+" set fileformat=unix
 
 " Don't redraw screen when not needed
 set lazyredraw
@@ -35,7 +35,7 @@ set ignorecase
 set smartcase
 
 " Maintain context around cursor
-set scrolloff=7
+set scrolloff=15
 
 " Wildmode configuration
 set wildmode=longest,list
@@ -115,7 +115,7 @@ colorscheme desert
 " colorscheme solarized
 
 " Indent Guide configuration
-set ts=2 sw=2 et
+" set ts=2 sw=2 et
 let g:indent_guides_start_level = 2
 
 " Syntastic configuration
