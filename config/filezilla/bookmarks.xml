@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileZilla3 version="3.14.0" platform="*nix">
+	<Bookmark>
+		<Name>Pi</Name>
+		<LocalDir>/home/brad/</LocalDir>
+		<RemoteDir>1 0 3 mnt 3 ext</RemoteDir>
+	</Bookmark>
+</FileZilla3>

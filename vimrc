@@ -38,8 +38,10 @@ set smartcase
 set scrolloff=15
 
 " Wildmode configuration
-set wildmode=longest,list
+set wildmode=longest,list,full
 set wildmenu
+" Make hardcoded tab work
+:set wildcharm=<C-Z>
 
 " Configure tab behavior
 set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
@@ -49,6 +51,9 @@ set ruler
 
 " Show matching brackets
 set showmatch
+
+" Load default menus
+source $VIMRUNTIME/menu.vim
 
 " ------ Plugins ------
 " Clone vundle if not present
@@ -67,6 +72,7 @@ set laststatus=2
 " Hide default statusline text
 set noshowmode "
 
+" Set up Vundle
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
@@ -74,62 +80,115 @@ call vundle#begin()
 " required!
 Bundle 'gmarik/vundle'
 
-" The bundles you install will be listed here
+" ------ Install Plugins ------
+" --- General ---
+" Solarized colors for when I want them
 Bundle 'altercation/vim-colors-solarized'
+" Directory view
 Bundle 'scrooloose/nerdtree'
+" Ctags view
+Bundle 'majutsushi/tagbar'
+" Awesome on-the-fly syntax checking for tons of languages
 Bundle 'scrooloose/syntastic'
+" Comment toggling with lots of options
 Bundle 'scrooloose/nerdcommenter'
+" Shows git changes in the side gutter
 Bundle 'gitgutter/Vim'
+" Git wrapper inside vim
 Bundle 'tpope/vim-fugitive'
+" Surround things and change surroundings
 Bundle 'tpope/vim-surround'
+" Simple, quick commenting
 Bundle 'tpope/vim-commentary'
+" Automatically keep ctags up to date
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+" Make . work for plugins
 Bundle 'tpope/vim-repeat'
+" Visualize undo tree
 Bundle 'sjl/gundo.vim'
-Bundle 'klen/python-mode'
-Bundle 'davidhalter/jedi-vim'
+" Much nicer buffer management
 Bundle 'jlanzarotta/bufexplorer'
+" Seamless navigation between tmux panes and vim splits
 Bundle 'christoomey/vim-tmux-navigator'
+" Parentheses and bracket auto-close
 Bundle 'Raimondi/delimitMate'
+" Awesome autocompletion for almost everything
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'rdnetto/YCM-Generator'
+" Shows indentation level
+Bundle 'nathanaelkane/vim-indent-guides'
+" Much nicer navigation
+Bundle 'easymotion/vim-easymotion'
+" Library required for some plugins
+Bundle 'L9'
+" Kickass fuzzy finder for whole filesystem
+Bundle 'kien/ctrlp.vim'
+" Can use Ag from vim
+Bundle 'rking/ag.vim'
+
+" --- Language specific ---
+" - Python -
+Bundle 'klen/python-mode'
+Bundle 'davidhalter/jedi-vim'
+
+" - C# -
+" Omnicompletion and syntax
+Bundle 'OmniSharp/omnisharp-vim'
+
+" - Rust -
+" Syntax and autocompletion
 Bundle 'rust-lang/rust.vim'
 Bundle 'phildawes/racer'
+
+" - Javascript -
 Bundle 'pangloss/vim-javascript'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'easymotion/vim-easymotion'
-Bundle 'L9'
-" Bundle 'FuzzyFinder'
-Bundle 'kien/ctrlp.vim'
-Bundle 'rking/ag.vim'
-" Bundle 'taglist.vim'
 
 call vundle#end()
 
-" Run in python using F9
-autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
-
 " ------ Plugin Configuration ------
+" --- General ---
+" - Visual -
 set background=dark
 "let g:solarized_termtrans = 1
 colorscheme desert
 " colorscheme solarized
 
+" - Utility -
+" DelimitMate sane bracing
+let delimitMate_expand_cr = 1
+
 " Indent Guide configuration
 " set ts=2 sw=2 et
+let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
+
+" GitGutter
+let g:gitgutter_map_keys = 0
+
+" NERD Commenter
+" let g:NERDMenuMode = 1
 
 " Syntastic configuration
 let g:syntastic_aggregate_errors = 1
 
-" Javascript configuration
-let g:javascript_enable_dom_htmlcss = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Powerline configuration
 let g:powerline_pycmd = "py"
 let g:powerline_pyeval = "pyeval"
 
-" SuperTab omnicomplete movement
-" let g:SuperTabDefaultCompletionType = "context"
+" --- Language Specific ---
+" - Javascript -
+" Javascript configuration
+let g:javascript_enable_dom_htmlcss = 1
+
+" - Python -
+" Run in python using F9
+autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 " Documentation
 let g:pymode_doc = 1
@@ -157,7 +216,8 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
- 
+
+" - Rust -
 " Rust racer
 let g:racer_cmd = "~/dotfiles/racer/target/release/racer"
 " Must install Rust source to this location first
@@ -165,10 +225,7 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 
 "------ Keybindings ------
 " Plugins
-" FuzzyFinder
-" Leader-f opens buffer mode
-" :FufFile - file mode
-" 
+"
 " BufferExplorer
 " leader-be - Open explorer
 " leader-bs - Open horizontal split
@@ -176,10 +233,7 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 " t or Shift-Enter - Open in new tab
 "   switch between open tabs with gt and gT
 "
-" Tag List
-" Leader-t opens tag list
-"
-" C-VIm
+" C-Vim
 " I should get this when I have time to learn it
 "
 " SurroundVim
@@ -224,51 +278,92 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 " ,,s   bidirectional letter search
 " ,,b   backwards words
 
+" --- Mappings ---
+" - General -
 noremap <space> :
 inoremap ,, <ESC>  
 cnoremap ,, <ESC><ESC> 
 " imap ,c <C-X><C-O>
 let mapleader=","
 " Enable hex mode
-map <leader>he :%!xxd<CR>
+map <leader>\he :%!xxd<CR>
 " Disable hex mode
-map <leader>hd :%!xxd -r<CR>
+map <leader>\hd :%!xxd -r<CR>
 " Prev/next buffer
 map <leader>q :bp<CR>
 map <leader>w :bn<CR>
 " System clipboard cut copy paste
-map <C-y> "+y
-map <C-y><C-y> "+Y
-map <C-p> "+p
-map <C-p><C-p> "+P
-map <C-x> "+x
-map <C-d><C-d> "+dd
+" map <C-y> "+y
+" map <C-y><C-y> "+Y
+map <leader>y "+y
+map <leader><leader>y "+Y
+" map <C-p> "+p
+" map <C-p><C-p> "+P
+map <leader>p "+p
+map <leader><leader>p "+P"
+" map <C-x> "+x
+" map <C-d><C-d> "+dd
+map <leader>x "+x
+map <leader><leader>x "+X
 " Move between splits
 nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>
 nnoremap <C-h> <C-W><C-h>
 nnoremap <C-l> <C-W><C-l>
+" Make splits
+nnoremap <leader>- :sp<space>
+nnoremap <leader><bar> :vsp<space>
 set splitbelow
 set splitright
-" map <leader>w :w<CR>
-map <leader>d :NERDTreeToggle<CR>
-"map <leader>fc :FufFileWithCurrentBufferDir<CR>
-"map <leader>fb :FufBuffer<CR>
-"map <leader>ft :FufTag<CR>
-"map <leader>t :TlistToggle<CR>
-map <leader>ygc :YcmGenerateConfig<CR>
-" Ag
-map <leader>ag :Ag<space>
-" Easymotion
-" let g:EasyMotion_do_mapping = 0
-let g:EasyMotion_smartcase = 1
-nmap s <Plug>(easymotion-s2)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
 " Open vimrc
 map <leader>v :e $MYVIMRC<CR>
 " Update vimrc
 map <leader>rr :source ~/.vimrc<CR>
+" Open GVim menu
+map <leader>m :emenu <C-Z><C-Z>
+
+" - Plugins -
+" Toggle directory view
+map <leader>t :NERDTreeToggle<CR>
+
+" Toggle tagbar
+map <leader>ct :TagbarToggle<CR>
+
+" Update ctags
+" nnoremap <leader>ct :! ctags -R<CR><CR>
+
+" Jump to a tag
+nnoremap <leader>. :CtrlPTag<CR>
+
+" Make a config for YCM from Makefile
+map <leader>ygc :YcmGenerateConfig<CR>
+
+" Ag
+map <leader>ag :Ag<space>
+
+" Easymotion
+" let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+map <leader>/ <Plug>(easymotion-sn)
+omap <leader>/ <Plug>(easymotion-tn)
+" map <leader>n <Plug>(easymotion-next)
+" map <leader>N <Plug>(easymotion-prev)
+map <leader>s <Plug>(easymotion-s)
+map <leader><leader>s <Plug>(easymotion-s2)
+map <leader>f <Plug>(easymotion-f)
+map <leader>l <Plug>(easymotion-lineforward)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+map <leader>h <Plug>(easymotion-linebackward)
+
+" NERD Commenter
+" Enter the NERD Commenter menu which can be tabbed through
+:map <leader>nc :emenu Plugin.comment.<C-Z><C-Z>
+
+" Gundo
+nnoremap <leader>u :GundoToggle<CR>
+
+" silent! call repeat#set("\<Plug>(easymotion)", v:count)
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
