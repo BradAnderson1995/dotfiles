@@ -22,7 +22,7 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 TabActivityColor=#dc322f
-FontName=Source Code Pro for Powerline 10
+FontName=Source Code Pro for Powerline Medium 10
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.900000
 
