@@ -10,3 +10,5 @@ application/postscript=gvim.desktop;
 application/xml=google-chrome.desktop;
 text/x-python=gvim.desktop;
 text/html=mousepad.desktop;
+application/pdf=xfce4-clipman.desktop;
+image/png=ristretto.desktop;

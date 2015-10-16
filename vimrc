@@ -153,6 +153,8 @@ set background=dark
 "let g:solarized_termtrans = 1
 colorscheme desert
 " colorscheme solarized
+hi IndentGuidesOdd ctermbg=darkgreen
+hi IndentGuidesEven ctermbg=cyan
 
 " - Utility -
 " DelimitMate sane bracing
