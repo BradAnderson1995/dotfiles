@@ -45,7 +45,6 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/forward" "<Alt>Right")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/move-to-trash" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/select-by-pattern" "<Primary>s")
-; (gtk_accel_path "<Actions>/ThunarActions/Twp::setwallpaper" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/about" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/8d751112df47b6c5a2e2c73308cdc151" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/contents" "F1")
