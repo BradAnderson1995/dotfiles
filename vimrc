@@ -43,6 +43,9 @@ set wildmenu
 " Make hardcoded tab work
 :set wildcharm=<C-Z>
 
+" Mouse support
+set mouse=a
+
 " Configure tab behavior
 set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
 
@@ -153,8 +156,6 @@ set background=dark
 "let g:solarized_termtrans = 1
 colorscheme desert
 " colorscheme solarized
-" hi IndentGuidesOdd ctermbg=darkgreen
-" hi IndentGuidesEven ctermbg=cyan
 
 " - Utility -
 " DelimitMate sane bracing
@@ -162,8 +163,11 @@ let delimitMate_expand_cr = 1
 
 " Indent Guide configuration
 " set ts=2 sw=2 et
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_start_level = 2
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=darkgreen
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=cyan
 
 " GitGutter
 let g:gitgutter_map_keys = 0
@@ -199,6 +203,7 @@ let g:pymode_doc_key = 'K'
 " Linting
 let g:pymode_lint = 1
 let g:pymode_lint_checker = "pyflakes,pep8"
+let g:pymode_lint_message = 1
 
 " Auto check on save
 let g:pymode_lint_write = 1
@@ -216,8 +221,23 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
-" Don't autofold code
-let g:pymode_folding = 0
+" Enable python folding
+let g:pymode_folding = 1
+
+" Enable pymode motion
+let g:pymode_motion = 1
+
+" Set up default python options
+let g:pymode_options = 1
+
+" Trim whitespace on save
+let g:pymode_trim_whitespaces = 1
+
+" PEP8-compatible python indent
+let g:pymode_indent = 1
+
+" Rope support
+let g:pymode_rope = 0
 
 " - Rust -
 " Rust racer
@@ -291,6 +311,8 @@ let mapleader=","
 map <leader>\he :%!xxd<CR>
 " Disable hex mode
 map <leader>\hd :%!xxd -r<CR>
+" Show whitespace
+nmap <leader><leader>lw :set list!<CR>
 " Prev/next buffer
 map <leader>q :bp<CR>
 map <leader>w :bn<CR>
@@ -381,5 +403,5 @@ func! DeleteTrailingWS()
     %s/\s\+$//ge
     exe "normal `z"
 endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
+" autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()

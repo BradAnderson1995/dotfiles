@@ -67,6 +67,7 @@ source $ZSH/oh-my-zsh.sh
 # # if [[ -n $SSH_CONNECTION ]]; then
 export EDITOR='vim'
 export TERM=xterm-256color
+
 # # else
 # #   export EDITOR='mvim'
 # # fi
@@ -87,6 +88,8 @@ export TERM=xterm-256color
 # # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias -s txt=vim
 alias -s .c=vim
+# Crontab
+alias crontab-e='vim ~/.crontab && crontab ~/.crontab'
 
 # Lines configured by zsh-newuser-install
 setopt appendhistory autocd extendedglob
@@ -104,6 +107,8 @@ DEFAULT_USER=brad
 
 alias sc="vim ~/dotfiles/shortcuts.txt"
 alias commands="vim ~/dotfiles/usefulcommands.txt"
+# Chrome HiDPI support
+alias chrome="google-chrome-stable --force-device-scale-factor=1.5"
 
 # Syntax highlighting configuration
 ZSH_HIGHLIGHT_STYLES[path]='bold'

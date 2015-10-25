@@ -11,6 +11,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 platform=$(uname)
 # list of files/folders to symlink in homedir
 files="
+xinitrc
 config
 bashrc 
 vimrc 
@@ -18,6 +19,7 @@ vim
 tmux.conf
 tmuxinator
 zshrc 
+crontab
 profile
 oh-my-zsh 
 private 
@@ -39,6 +41,8 @@ package-query
 yaourt
 "
 YAOURT="
+dmenu2
+compton
 google-chrome
 atom-editor
 dropbox
@@ -133,6 +137,10 @@ fi
 install_tools () {
     if [ $(program_installed apt-get) == 1 ]; then
         sudo apt-get update
+        sudo apt-get install i3
+        sudo apt-get install feh
+        sudo apt-get install imagemagick
+        sudo apt-get install cron
         sudo apt-get install python2-pip
         sudo apt-get install terminator
         sudo apt-get install tree
@@ -140,8 +148,14 @@ install_tools () {
         sudo apt-get install tmux
         sudo apt-get install build-essential
         sudo apt-get install ctags
+        sudo apt-get install ruby
     elif [ $(program_installed pacman) == 1 ]; then
         sudo pacman -Syu
+        sudo pacman -S i3
+        sudo pacman -S feh
+        sudo pacman -S imagemagick
+        sudo pacman -S cron
+        sudo pacman -S pavucontrol
         sudo pacman -S python2-pip
         sudo pacman -S terminator
         sudo pacman -S tree
@@ -151,9 +165,12 @@ install_tools () {
         sudo pacman -S ctags
         sudo pacman -S clang
         sudo pacman -S cmake
+        sudo pacman -S ruby
     else 
         echo "Cannot install tools, no compatible package manager."
     fi
+    # Enable crontab
+    systemctl enable cronie.service
     if [ $(program_installed ruby) == 1 ]; then
         gem install tmuxinator
         gem install guard
@@ -248,7 +265,7 @@ prompt_installations() {
             install_tools
             install_powerline_fonts
             install_zsh
-            install_rust_src
+            # install_rust_src
             install_terminator
         else
             echo -n "Would you like to install tools? (y/n) "
