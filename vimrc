@@ -303,7 +303,9 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 " --- Mappings ---
 " - General -
 noremap <space> :
-inoremap ,, <ESC>  
+inoremap , <NOP>
+nnoremap , <NOP>
+inoremap ,, <ESC>
 cnoremap ,, <ESC><ESC> 
 " imap ,c <C-X><C-O>
 let mapleader=","
@@ -334,7 +336,7 @@ nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>
 nnoremap <C-h> <C-W><C-h>
 nnoremap <C-l> <C-W><C-l>
-" Make splits
+" Make split
 nnoremap <leader>- :sp<space>
 nnoremap <leader><bar> :vsp<space>
 set splitbelow
