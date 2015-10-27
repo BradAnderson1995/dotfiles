@@ -43,6 +43,7 @@ yaourt
 YAOURT="
 dmenu2
 compton
+pulseaudio-ctl
 google-chrome
 atom-editor
 dropbox
@@ -156,6 +157,7 @@ install_tools () {
         sudo pacman -S imagemagick
         sudo pacman -S cron
         sudo pacman -S pavucontrol
+        sudo pacman -S pulseaudio
         sudo pacman -S python2-pip
         sudo pacman -S terminator
         sudo pacman -S tree
