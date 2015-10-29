@@ -123,3 +123,7 @@ source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # TMuxinator Completion
 source ~/bin/tmuxinator.zsh
+
+# Make a cow say something offensive
+fortune -a -s | fmt -80 -s | cowthink -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
+alias sl="sl -laF"

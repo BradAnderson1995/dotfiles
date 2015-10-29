@@ -303,8 +303,6 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 " --- Mappings ---
 " - General -
 noremap <space> :
-inoremap , <NOP>
-nnoremap , <NOP>
 inoremap ,, <ESC>
 cnoremap ,, <ESC><ESC> 
 " imap ,c <C-X><C-O>

@@ -41,6 +41,7 @@ package-query
 yaourt
 "
 YAOURT="
+rxvt-unicode-patched
 dmenu2
 compton
 pulseaudio-ctl
@@ -168,6 +169,11 @@ install_tools () {
         sudo pacman -S clang
         sudo pacman -S cmake
         sudo pacman -S ruby
+        sudo pacman -S sl
+        sudo pacman -S cowsay
+        sudo pacman -S fortune-mod
+        sudo pacman -S ranger
+        sudo pacman -S highlight
     else 
         echo "Cannot install tools, no compatible package manager."
     fi

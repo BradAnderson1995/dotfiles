@@ -1,4 +1,4 @@
-; Thunar GtkAccelMap rc-file         -*- scheme -*-
+; thunar GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/ThunarLauncher/sendto-desktop" "")
@@ -63,7 +63,6 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-descending" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/properties" "<Alt>Return")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-type" "")
-; (gtk_accel_path "<Actions>/ThunarActions/Tdp::move\n" "")
 ; (gtk_accel_path "<Actions>/ThunarActions/uca-action-1429563507572862-1" "")
 ; (gtk_accel_path "<Actions>/ThunarActions/uca-action-1429563507572937-2" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/delete" "")
