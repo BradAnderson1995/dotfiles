@@ -153,6 +153,7 @@ install_tools () {
         sudo apt-get install ruby
     elif [ $(program_installed pacman) == 1 ]; then
         sudo pacman -Syu
+        timedatectl set-ntp true
         sudo pacman -S i3
         sudo pacman -S feh
         sudo pacman -S imagemagick
@@ -182,6 +183,7 @@ install_tools () {
     if [ $(program_installed ruby) == 1 ]; then
         gem install tmuxinator
         gem install guard
+        gem install bropages
     fi
 }
 

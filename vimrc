@@ -87,6 +87,10 @@ Bundle 'gmarik/vundle'
 " --- General ---
 " Solarized colors for when I want them
 Bundle 'altercation/vim-colors-solarized'
+" Zenburn colors for when I want them
+Bundle 'jnurmine/Zenburn'
+" Base16 themes
+Bundle 'chriskempson/base16-vim'
 " Directory view
 Bundle 'scrooloose/nerdtree'
 " Ctags view
@@ -153,9 +157,16 @@ call vundle#end()
 " --- General ---
 " - Visual -
 set background=dark
-"let g:solarized_termtrans = 1
-colorscheme desert
+let base16colorspace=256
+" let g:solarized_termtrans = 1
+
+" colorscheme desert
+colorscheme zenburn
 " colorscheme solarized
+" colorscheme base16-default
+
+" Have vrm extend background color to full terminal screen
+set t_ut=
 
 " - Utility -
 " DelimitMate sane bracing
@@ -305,6 +316,8 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 noremap <space> :
 inoremap ,, <ESC>
 cnoremap ,, <ESC><ESC> 
+nmap j gj
+nmap k gk
 " imap ,c <C-X><C-O>
 let mapleader=","
 " Enable hex mode
@@ -313,6 +326,8 @@ map <leader>\he :%!xxd<CR>
 map <leader>\hd :%!xxd -r<CR>
 " Show whitespace
 nmap <leader><leader>lw :set list!<CR>
+" List registers
+map <leader><leader>lr :reg<CR>
 " Prev/next buffer
 map <leader>q :bp<CR>
 map <leader>w :bn<CR>
@@ -345,6 +360,12 @@ map <leader>v :e $MYVIMRC<CR>
 map <leader>rr :source ~/.vimrc<CR>
 " Open GVim menu
 map <leader>m :emenu <C-Z><C-Z>
+" Low-light mode
+map <leader><leader>ll :colorscheme zenburn<CR>
+" Daylight mode
+map <leader><leader>LL :colorscheme desert<CR>
+" Open ranger
+nmap <leader>ra :call Ranger()<cr>
 
 " - Plugins -
 " Toggle directory view
@@ -358,6 +379,8 @@ map <leader>ct :TagbarToggle<CR>
 
 " Jump to a tag
 nnoremap <leader>. :CtrlPTag<CR>
+" Jump to a buffer
+nnoremap <leader>; :CtrlPBuffer<CR>
 
 " Make a config for YCM from Makefile
 map <leader>ygc :YcmGenerateConfig<CR>
@@ -388,6 +411,22 @@ map <leader>h <Plug>(easymotion-linebackward)
 nnoremap <leader>u :GundoToggle<CR>
 
 " silent! call repeat#set("\<Plug>(easymotion)", v:count)
+
+" Open ranger from within vim
+function! Ranger()
+    " Get a temp file name without creating it
+    let tmpfile = substitute(system('mktemp -u'), '\n', '', '')
+    " Launch ranger, passing it the temp file name
+    silent exec '!RANGER_RETURN_FILE='.tmpfile.' ranger'
+    " If the temp file has been written by ranger
+    if filereadable(tmpfile)
+        " Get the selected file name from the temp file
+        let filetoedit = system('cat '.tmpfile)
+        exec 'edit '.filetoedit
+        call delete(tmpfile)
+    endif
+    redraw!
+endfunction
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *

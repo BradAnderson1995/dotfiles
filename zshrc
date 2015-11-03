@@ -9,6 +9,9 @@ export RUST_SRC_PATH=/usr/local/src/rust/src
 # # Optionally, if you set this to "random", it'll load a random theme each
 # # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
+# Base16 Shell
+# BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
+# [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 #
 # # Uncomment the following line to use case-sensitive completion.
 # # CASE_SENSITIVE="true"
@@ -124,6 +127,8 @@ source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 # TMuxinator Completion
 source ~/bin/tmuxinator.zsh
 
-# Make a cow say something offensive
-fortune -a -s | fmt -80 -s | cowthink -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
+# Add user cowpath to COWPATH
+COWPATH="$COWPATH:$HOME/dotfiles/cowfiles"
+# Make a random (cow?) with a random face say something
+fortune -a -s | fmt -80 -s | cowthink -$(shuf -n 1 -e b d g p s t w y)  -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
 alias sl="sl -laF"
