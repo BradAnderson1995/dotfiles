@@ -60,8 +60,13 @@ source $VIMRUNTIME/menu.vim
 
 " ------ Plugins ------
 " Clone vundle if not present
-if empty(glob("~/.vim/bundle/vundle"))
-    !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+" if empty(glob("~/.vim/bundle/vundle"))
+"     !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+" endif
+"
+" Clone NeoBundle if not present
+if empty(glob("~/.vim/bundle/neobundle.vim"))
+    !git clone https://github.com/shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 endif
 
 " Powerline
@@ -76,82 +81,119 @@ set laststatus=2
 set noshowmode "
 
 " Set up Vundle
-set rtp+=~/.vim/bundle/vundle
-call vundle#begin()
+" set rtp+=~/.vim/bundle/vundle
+" call vundle#begin()
+"
+" Set up NeoBundle
+set rtp+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+" Bundle 'gmarik/vundle'
+"
+" let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " ------ Install Plugins ------
 " --- General ---
+" - Visual -
 " Solarized colors for when I want them
-Bundle 'altercation/vim-colors-solarized'
+NeoBundle 'altercation/vim-colors-solarized'
 " Zenburn colors for when I want them
-Bundle 'jnurmine/Zenburn'
+NeoBundle 'jnurmine/Zenburn'
 " Base16 themes
-Bundle 'chriskempson/base16-vim'
+NeoBundle 'chriskempson/base16-vim'
+" Hybrid material theme
+NeoBundle 'kristijanhusak/vim-hybrid-material'
+
+" - Views -
 " Directory view
-Bundle 'scrooloose/nerdtree'
-" Ctags view
-Bundle 'majutsushi/tagbar'
-" Awesome on-the-fly syntax checking for tons of languages
-Bundle 'scrooloose/syntastic'
-" Comment toggling with lots of options
-Bundle 'scrooloose/nerdcommenter'
-" Shows git changes in the side gutter
-Bundle 'gitgutter/Vim'
-" Git wrapper inside vim
-Bundle 'tpope/vim-fugitive'
-" Surround things and change surroundings
-Bundle 'tpope/vim-surround'
-" Simple, quick commenting
-Bundle 'tpope/vim-commentary'
-" Automatically keep ctags up to date
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-easytags'
-" Make . work for plugins
-Bundle 'tpope/vim-repeat'
+NeoBundle 'scrooloose/nerdtree'
 " Visualize undo tree
-Bundle 'sjl/gundo.vim'
+NeoBundle 'sjl/gundo.vim'
 " Much nicer buffer management
-Bundle 'jlanzarotta/bufexplorer'
-" Seamless navigation between tmux panes and vim splits
-Bundle 'christoomey/vim-tmux-navigator'
-" Parentheses and bracket auto-close
-Bundle 'Raimondi/delimitMate'
-" Awesome autocompletion for almost everything
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'rdnetto/YCM-Generator'
+NeoBundle 'jlanzarotta/bufexplorer'
 " Shows indentation level
-Bundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+" Show marks
+NeoBundle 'kshenoy/vim-signature'
+
+" - Ctags -
+" Ctags view
+NeoBundle 'majutsushi/tagbar'
+" Automatically keep ctags up to date
+NeoBundle 'xolox/vim-easytags'
+
+" - Syntax and completion -
+" Awesome on-the-fly syntax checking for tons of languages
+NeoBundle 'scrooloose/syntastic'
+" Awesome autocompletion for almost everything
+NeoBundle 'Valloric/YouCompleteMe'
+
+" - Commenting -
+" Comment toggling with lots of options
+NeoBundle 'scrooloose/nerdcommenter'
+" Simple, quick commenting
+NeoBundle 'tpope/vim-commentary'
+
+" - Git -
+" Shows git changes in the side gutter
+NeoBundle 'gitgutter/Vim'
+" Git wrapper inside vim
+NeoBundle 'tpope/vim-fugitive'
+
+" - Automation -
+" Surround things and change surroundings
+NeoBundle 'tpope/vim-surround'
+" Parentheses and bracket auto-close
+NeoBundle 'Raimondi/delimitMate'
 " Much nicer navigation
-Bundle 'easymotion/vim-easymotion'
-" Library required for some plugins
-Bundle 'L9'
+NeoBundle 'easymotion/vim-easymotion'
+" Multiple cursors
+NeoBundle 'terryma/vim-multiple-cursors'
+" Automatic alignment
+NeoBundle 'godlygeek/tabular'
+
+" - Search -
 " Kickass fuzzy finder for whole filesystem
-Bundle 'kien/ctrlp.vim'
+NeoBundle 'kien/ctrlp.vim'
 " Can use Ag from vim
-Bundle 'rking/ag.vim'
+NeoBundle 'rking/ag.vim'
+
+" - Utility and dependencies
+" Library required for some plugins
+NeoBundle 'L9'
+" Seamless navigation between tmux panes and vim splits
+NeoBundle 'christoomey/vim-tmux-navigator'
+" Required for easytags
+NeoBundle 'xolox/vim-misc'
+" Make . work for plugins
+NeoBundle 'tpope/vim-repeat'
+" Make configuration files for YCM
+NeoBundle 'rdnetto/YCM-Generator'
 
 " --- Language specific ---
 " - Python -
-Bundle 'klen/python-mode'
-Bundle 'davidhalter/jedi-vim'
+NeoBundle 'klen/python-mode'
+NeoBundle 'davidhalter/jedi-vim'
 
 " - C# -
 " Omnicompletion and syntax
-Bundle 'OmniSharp/omnisharp-vim'
+NeoBundle 'OmniSharp/omnisharp-vim'
 
 " - Rust -
 " Syntax and autocompletion
-Bundle 'rust-lang/rust.vim'
-Bundle 'phildawes/racer'
+NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'phildawes/racer'
 
 " - Javascript -
-Bundle 'pangloss/vim-javascript'
+NeoBundle 'pangloss/vim-javascript'
 
-call vundle#end()
+" call vundle#end()
+call neobundle#end()
+" Prompt installation of uninstalled plugins
+NeoBundleCheck
 
 " ------ Plugin Configuration ------
 " --- General ---
@@ -161,9 +203,14 @@ let base16colorspace=256
 " let g:solarized_termtrans = 1
 
 " colorscheme desert
-colorscheme zenburn
+" colorscheme zenburn
 " colorscheme solarized
 " colorscheme base16-default
+" colorscheme hybrid_reverse
+colorscheme hybrid_material
+" colorscheme railcasts
+
+let g:enable_bold_font = 1
 
 " Have vrm extend background color to full terminal screen
 set t_ut=
@@ -224,7 +271,7 @@ let g:pymode_virtualenv = 1
 
 " Enable breakpoints plugin
 let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_key = '<leader>b'
+let g:pymode_breakpoint_bind = '<localleader>b'
 
 " Syntax highlighting
 let g:pymode_syntax = 1
@@ -272,6 +319,31 @@ let $RUST_SRC_PATH="/usr/local/src/rust/src/"
 " SurroundVim
 " [action] s [current] [new] (e.g. cs"' changes " to '
 " iw is a text object (so, selecting Hello and pressing ysiw] is [Hello]
+"
+" Vim Signature
+" mx           Toggle mark 'x' and display it in the leftmost column
+" dmx          Remove mark 'x' where x is a-zA-Z
+" m,           Place the next available mark
+" m.           If no mark on line, place the next available mark. Otherwise, remove (first) existing mark.
+" m-           Delete all marks from the current line
+" m<Space>     Delete all marks from the current buffer
+" ]`           Jump to next mark
+" [`           Jump to prev mark
+" ]'           Jump to start of next line containing a mark
+" ['           Jump to start of prev line containing a mark
+" `]           Jump by alphabetical order to next mark
+" `[           Jump by alphabetical order to prev mark
+" ']           Jump by alphabetical order to start of next line having a mark
+" '[           Jump by alphabetical order to start of prev line having a mark
+" m/           Open location list and display marks from current buffer
+" m[0-9]       Toggle the corresponding marker !@#$%^&*()
+" m<S-[0-9]>   Remove all markers of the same type
+" ]-           Jump to next line having a marker of the same type
+" [-           Jump to prev line having a marker of the same type
+" ]=           Jump to next line having a marker of any type
+" [=           Jump to prev line having a marker of any type
+" m?           Open location list and display markers from current buffer
+" m<BS>        Remove all markers"
 " 
 " CtrlP
 "
@@ -320,6 +392,7 @@ nmap j gj
 nmap k gk
 " imap ,c <C-X><C-O>
 let mapleader=","
+let maplocalleader="\\"
 " Enable hex mode
 map <leader>\he :%!xxd<CR>
 " Disable hex mode
@@ -328,22 +401,18 @@ map <leader>\hd :%!xxd -r<CR>
 nmap <leader><leader>lw :set list!<CR>
 " List registers
 map <leader><leader>lr :reg<CR>
+" List marks
+map <leader><leader>lm :marks<CR>
 " Prev/next buffer
 map <leader>q :bp<CR>
 map <leader>w :bn<CR>
 " System clipboard cut copy paste
-" map <C-y> "+y
-" map <C-y><C-y> "+Y
 map <leader>y "+y
 map <leader><leader>y "+Y
-" map <C-p> "+p
-" map <C-p><C-p> "+P
 map <leader>p "+p
 map <leader><leader>p "+P"
-" map <C-x> "+x
-" map <C-d><C-d> "+dd
 map <leader>x "+x
-map <leader><leader>x "+X
+map <leader><leader>x "+dd
 " Move between splits
 nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>
@@ -395,13 +464,29 @@ map <leader>/ <Plug>(easymotion-sn)
 omap <leader>/ <Plug>(easymotion-tn)
 " map <leader>n <Plug>(easymotion-next)
 " map <leader>N <Plug>(easymotion-prev)
+" Bidirectional single-letter search
 map <leader>s <Plug>(easymotion-s)
+" Bidirectional 2-letter search
 map <leader><leader>s <Plug>(easymotion-s2)
+" Forward single letter search
 map <leader>f <Plug>(easymotion-f)
+" Directional jumps
 map <leader>l <Plug>(easymotion-lineforward)
 map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
 map <leader>h <Plug>(easymotion-linebackward)
+
+" Multiple Cursors
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='n'
+let g:multi_cursor_prev_key='m'
+let g:multi_cursor_skip_key='.'
+let g:multi_cursor_quit_key=','
+let g:multi_cursor_start_key='<C-n>'
+
+" Tabular
+map <leader>a= :Tabularize /=<CR>
+map <leader>a: :Tabularize /:\zs<CR>
 
 " NERD Commenter
 " Enter the NERD Commenter menu which can be tabbed through
@@ -442,5 +527,5 @@ func! DeleteTrailingWS()
     %s/\s\+$//ge
     exe "normal `z"
 endfunc
-" autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
