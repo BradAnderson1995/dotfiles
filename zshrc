@@ -1,3 +1,5 @@
+# Gruvbox colors
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export RUST_SRC_PATH=/usr/local/src/rust/src
@@ -10,6 +12,8 @@ export RUST_SRC_PATH=/usr/local/src/rust/src
 # # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
 # Base16 Shell
+# BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
+# [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 # BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 #
@@ -112,6 +116,7 @@ alias sc="vim ~/dotfiles/shortcuts.txt"
 alias commands="vim ~/dotfiles/usefulcommands.txt"
 # Chrome HiDPI support
 alias chrome="google-chrome-stable --force-device-scale-factor=1.5"
+alias tmux="tmux -2"
 
 # Syntax highlighting configuration
 ZSH_HIGHLIGHT_STYLES[path]='bold'
@@ -127,8 +132,11 @@ source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 # TMuxinator Completion
 source ~/bin/tmuxinator.zsh
 
+# Dircolors
+eval $(dircolors ~/.dircolors)
+
 # Add user cowpath to COWPATH
 COWPATH="$COWPATH:$HOME/dotfiles/cowfiles"
 # Make a random (cow?) with a random face say something
-fortune -a -s | fmt -80 -s | cowthink -$(shuf -n 1 -e b d g p s t w y)  -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
+fortune -a | fmt -80 -s | cowthink -$(shuf -n 1 -e b d g p s t w y)  -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
 alias sl="sl -laF"

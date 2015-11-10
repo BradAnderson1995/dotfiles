@@ -70,10 +70,10 @@ if empty(glob("~/.vim/bundle/neobundle.vim"))
 endif
 
 " Powerline
-set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
 
 " Always display powerline statusline
 set laststatus=2
@@ -98,6 +98,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " ------ Install Plugins ------
 " --- General ---
 " - Visual -
+" Rainbow parentheses
+NeoBundle 'kien/rainbow_parentheses.vim'
 " Solarized colors for when I want them
 NeoBundle 'altercation/vim-colors-solarized'
 " Zenburn colors for when I want them
@@ -106,6 +108,10 @@ NeoBundle 'jnurmine/Zenburn'
 NeoBundle 'chriskempson/base16-vim'
 " Hybrid material theme
 NeoBundle 'kristijanhusak/vim-hybrid-material'
+" Gruvbox
+NeoBundle 'morhetz/gruvbox'
+" Airline
+NeoBundle 'bling/vim-airline'
 
 " - Views -
 " Directory view
@@ -116,6 +122,7 @@ NeoBundle 'sjl/gundo.vim'
 NeoBundle 'jlanzarotta/bufexplorer'
 " Shows indentation level
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'yggdroot/indentLine'
 " Show marks
 NeoBundle 'kshenoy/vim-signature'
 
@@ -174,6 +181,9 @@ NeoBundle 'tpope/vim-repeat'
 NeoBundle 'rdnetto/YCM-Generator'
 
 " --- Language specific ---
+" - Web -
+NeoBundle 'mattn/emmet-vim'
+
 " - Python -
 NeoBundle 'klen/python-mode'
 NeoBundle 'davidhalter/jedi-vim'
@@ -200,15 +210,32 @@ NeoBundleCheck
 " - Visual -
 set background=dark
 let base16colorspace=256
-" let g:solarized_termtrans = 1
+" let g:solarized_termtrans = 3
+let g:airline_powerline_fonts=1
+" Gruvbox
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark="medium"
+let g:gruvbox_contrast_light="soft"
+let g:gruvbox_invert_selection=1
+let g:gruvbox_invert_signs=0
+let g:gruvbox_improved_strings=0
+let g:gruvbox_improved_warnings=1
+let g:gruvbox_italicize_strings=1
 
+" Rainbow parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" Theme
 " colorscheme desert
 " colorscheme zenburn
 " colorscheme solarized
 " colorscheme base16-default
 " colorscheme hybrid_reverse
-colorscheme hybrid_material
-" colorscheme railcasts
+" colorscheme hybrid_material
+colorscheme gruvbox
 
 let g:enable_bold_font = 1
 
@@ -242,10 +269,15 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Powerline configuration
-let g:powerline_pycmd = "py"
-let g:powerline_pyeval = "pyeval"
+" let g:powerline_pycmd = "py"
+" let g:powerline_pyeval = "pyeval"
 
 " --- Language Specific ---
+" - Web -
+let g:user_emmet_install_global=0
+autocmd Filetype html,css EmmetInstall
+" let g:user_emmet_leader_key='<localleader>'
+
 " - Javascript -
 " Javascript configuration
 let g:javascript_enable_dom_htmlcss = 1
@@ -430,9 +462,9 @@ map <leader>rr :source ~/.vimrc<CR>
 " Open GVim menu
 map <leader>m :emenu <C-Z><C-Z>
 " Low-light mode
-map <leader><leader>ll :colorscheme zenburn<CR>
+map <leader><leader>ll :set background=dark<CR>
 " Daylight mode
-map <leader><leader>LL :colorscheme desert<CR>
+map <leader><leader>LL :set background=light<CR>
 " Open ranger
 nmap <leader>ra :call Ranger()<cr>
 
