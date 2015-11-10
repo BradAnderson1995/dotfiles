@@ -112,8 +112,12 @@ NeoBundle 'kristijanhusak/vim-hybrid-material'
 NeoBundle 'morhetz/gruvbox'
 " Airline
 NeoBundle 'bling/vim-airline'
+" Bufferline
+NeoBundle 'bling/vim-bufferline'
 
 " - Views -
+" Start screen
+NeoBundle 'mhinz/vim-startify'
 " Directory view
 NeoBundle 'scrooloose/nerdtree'
 " Visualize undo tree
@@ -242,6 +246,16 @@ let g:enable_bold_font = 1
 " Have vrm extend background color to full terminal screen
 set t_ut=
 
+" - Views -
+" Startify
+let g:startify_bookmarks = ["~/dotfiles/vimrc", "~/dotfiles/zshrc", "~/dotfiles/config/i3/config"]
+let g:startify_custom_indices = ['f', 'd', 's', 'a', 'g']
+let g:startify_custom_header = map(split(system('fortune -a -s | fmt -80 -s | cowthink -$(shuf -n 1 -e b d g p s t w y)  -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n'), '\n'), '"   ". v:val') + [","]
+
+" Automatically open tagbar when entering supported buffer
+" autocmd BufEnter * nested :call tagbar#autoopen(0)
+
+
 " - Utility -
 " DelimitMate sane bracing
 let delimitMate_expand_cr = 1
@@ -253,6 +267,10 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=darkgreen
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=cyan
+
+" Indent Line configuration
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '.'
 
 " GitGutter
 let g:gitgutter_map_keys = 0
@@ -267,6 +285,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" YCM configuration
+let g:ycm_global_ycm_extra_conf = '~/dotfiles/.ycm_extra_conf.py'
+let g:ycm_extra_conf_globlist = ['~/dotfiles/.ycm_extra_conf.py']
 
 " Powerline configuration
 " let g:powerline_pycmd = "py"
