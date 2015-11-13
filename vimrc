@@ -47,7 +47,7 @@ set wildmenu
 set mouse=a
 
 " Configure tab behavior
-set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
+set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smartindent "" ai cindent
 
 " Show current position
 set ruler
@@ -185,6 +185,9 @@ NeoBundle 'tpope/vim-repeat'
 NeoBundle 'rdnetto/YCM-Generator'
 
 " --- Language specific ---
+" - All -
+NeoBundle 'sheerun/vim-polyglot'
+
 " - Web -
 NeoBundle 'mattn/emmet-vim'
 
@@ -295,6 +298,9 @@ let g:ycm_extra_conf_globlist = ['~/dotfiles/.ycm_extra_conf.py']
 " let g:powerline_pyeval = "pyeval"
 
 " --- Language Specific ---
+" - All -
+let g:polyglot_disabled = ['python', 'rust']
+
 " - Web -
 let g:user_emmet_install_global=0
 autocmd Filetype html,css EmmetInstall
@@ -457,6 +463,8 @@ nmap <leader><leader>lw :set list!<CR>
 map <leader><leader>lr :reg<CR>
 " List marks
 map <leader><leader>lm :marks<CR>
+" Close buffer
+map <leader><leader>c :Bclose<CR>
 " Prev/next buffer
 map <leader>q :bp<CR>
 map <leader>w :bn<CR>
@@ -491,6 +499,8 @@ map <leader><leader>LL :set background=light<CR>
 nmap <leader>ra :call Ranger()<cr>
 
 " - Plugins -
+" Open Startify
+map <leader><leader>o :Startify<CR>
 " Toggle directory view
 map <leader>t :NERDTreeToggle<CR>
 
@@ -583,3 +593,9 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" Local overrides
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif

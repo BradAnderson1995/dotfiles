@@ -11,26 +11,24 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 platform=$(uname)
 # list of files/folders to symlink in homedir
 files="
-xinitrc
 config
+xinitrc
+xmodmap 
+Xresources 
+crontab
 bashrc 
+zshrc 
+oh-my-zsh 
 vimrc 
 vim 
 tmux.conf
 tmuxinator
-zshrc 
-crontab
-profile
-oh-my-zsh 
-private 
-scrotwm.conf 
-Xresources 
+gitconfig 
 gimp-2.8 
 mednafen 
 PyCharm40 
 themes 
-gitconfig 
-xmodmap 
+profile
 pam_environment"
 configs="
 xfce4/terminal
@@ -55,17 +53,19 @@ ttf-hack
 virtualbox-ext-oracle
 gtk-theme-arc-git
 "
+PROGRAMS="
+"
 
 function program_installed {
-	local return_=1
+    local return_=1
 
-	type $1 >/dev/null 2>&1 || { local return_=0; }
-	
-	echo "$return_"
+    type $1 >/dev/null 2>&1 || { local return_=0; }
+    
+    echo "$return_"
 }
 
 if [ $(program_installed cinnamon) == 1 ]; then
-	files += "cinnamon"
+    files += "cinnamon"
 fi
 
 # install AUR programs if on Arch
@@ -132,6 +132,7 @@ fi
 
 # clone Z
 if [[ ! -d $dir/z ]]; then
+    mkdir $dir/z
     git clone https://github.com/rupa/z $dir/z
 fi
 

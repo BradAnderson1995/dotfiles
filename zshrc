@@ -126,8 +126,12 @@ ZSH_HIGHLIGHT_STYLES[globbing]='fg=yellow'
 
 source ~/dotfiles/shortcuts.txt
 
-# Powerline plugin
+# Powerline plugin from distribution agnostic install directory
 source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# if [ -d ~/usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]; then
+# elif [ -d ~/usr/local/lib/python2.7/dist-packages/powerline/bindings ]; then
+#     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+# fi
 
 # TMuxinator Completion
 source ~/bin/tmuxinator.zsh
@@ -140,3 +144,8 @@ COWPATH="$COWPATH:$HOME/dotfiles/cowfiles"
 # Make a random (cow?) with a random face say something
 fortune -a | fmt -80 -s | cowthink -$(shuf -n 1 -e b d g p s t w y)  -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n
 alias sl="sl -laF"
+
+# Local overrides
+if [ -f !/.zshrc_local ]; then
+    source ~/.zshrc_local
+fi

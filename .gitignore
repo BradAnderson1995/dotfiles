@@ -1,4 +1,6 @@
 oh-my-zsh
+z
+cowfiles
 */*.log*
 */*/*/*.log*
 vim/bundle
