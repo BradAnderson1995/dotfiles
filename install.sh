@@ -24,6 +24,11 @@ PyCharm40
 themes 
 profile
 pam_environment"
+overrides="
+zshrc_local
+vimrc_local
+tmux_local.conf
+"
 # oh-my-zsh 
 # github repos to clone
 GIT="
@@ -98,14 +103,33 @@ function link_dotfiles {
     # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the 
     # homedir to any files in the ~/dotfiles directory specified in $files
     for file in $files; do
-        echo "Moving any existing dotfiles from ~ to $olddir"
-        mv ~/.$file ~/dotfiles_old/
-        echo "Creating symlink to $file in home directory."
-        ln -s $dir/$file ~/.$file
+        if [[ -f $file ]]; then
+            echo ""
+            if [[ -f ~/.$file ]]; then
+                echo "Moving : .$file (~/.$file -> $olddir/.$file)"
+                mv ~/.$file $olddir/
+            fi
+            echo "Linking: $file ($dir/$file -> ~/.$file)"
+            ln -s $dir/$file ~/.$file
+        fi
+    done
+    for file in $overrides; do
+        if [[ -f dotfile_overrides/$file ]]; then
+            echo ""
+            if [[ -f ~/.$file ]]; then
+                echo "Moving : .$file (~/.$file -> $olddir/.$file)"
+                mv ~/.$file $olddir/
+            fi
+            echo "Linking: $file ($dir/dotfile_overrides/$file -> ~/.$file)"
+            ln -s $dir/dotfile_overrides/$file ~/.$file
+        fi
     done
     # create symlink for bin directory
     if [[ ! -d ~/bin ]]; then 
         ln -s ~/dotfiles/bin ~/bin
+    fi
+    if [[ ! -f ~/.z ]]; then
+       touch ~/.z
     fi
 }
 
@@ -275,6 +299,7 @@ function main() {
     echo "[10] Install pip programs only"
     echo "[11] Install gems only"
     echo "[0] Quit"
+    echo ""
     echo "What would you like to do?"
     read response
     if [[ $response == "1" ]]; then
@@ -293,26 +318,34 @@ function main() {
         update_dotfiles
     elif [[ $response == "4" ]]; then
         link_dotfiles
+        echo ""
         main
     elif [[ $response == "5" ]]; then
         install_programs
         install_AUR
         install_pip
         install_gems
+        echo ""
         main
     elif [[ $response == "6" ]]; then
         configure_system
+        echo ""
         main
     elif [[ $response == "7" ]]; then
         install_programs
+        echo ""
         main
     elif [[ $response == "8" ]]; then
+        echo "Not yet implemented."
+        echo ""
         main
     elif [[ $response == "9" ]]; then
         install_pip
+        echo ""
         main
     elif [[ $response == "10" ]]; then
         install_gems
+        echo ""
         main
     fi
 }
